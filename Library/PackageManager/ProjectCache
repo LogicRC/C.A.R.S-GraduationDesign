@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638778792089900648
-    m_Hash: 1754676344
+      ticks: 638778839627640946
+    m_Hash: 3284194049
   m_LockFileStatus:
     m_FilePath: D:/Software/Unity/FinalProject/GraduationDesign/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638778792762418757
-    m_Hash: 648888878
+      ticks: 638778839627640946
+    m_Hash: 1959606095
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -255,10 +255,12 @@ m_ResolvedPackages:
     - 1.11.2
     - 1.12.0
     - 1.13.0
+    - 1.13.1
     compatible:
     - 1.11.2
     - 1.12.0
     - 1.13.0
+    - 1.13.1
     recommended: 1.11.2
     deprecated: []
   dependencies:
@@ -389,6 +391,7 @@ m_ResolvedPackages:
     - 4.0.3
     - 4.0.4
     - 4.1.0
+    - 4.1.1
     compatible:
     - 3.1.3
     - 4.0.0
@@ -397,6 +400,7 @@ m_ResolvedPackages:
     - 4.0.3
     - 4.0.4
     - 4.1.0
+    - 4.1.1
     recommended: 3.1.3
     deprecated: []
   dependencies:
@@ -478,9 +482,11 @@ m_ResolvedPackages:
     - 1.2.1
     - 1.2.2
     - 1.3.0
+    - 1.3.1
     compatible:
     - 1.2.2
     - 1.3.0
+    - 1.3.1
     recommended: 1.2.2
     deprecated: []
   dependencies:
@@ -1306,10 +1312,12 @@ m_ResolvedPackages:
     - 1.9.2
     - 1.9.4
     - 1.9.5
+    - 1.9.6
     compatible:
     - 1.9.4
     - 1.9.5
-    recommended: 1.9.5
+    - 1.9.6
+    recommended: 1.9.6
     deprecated:
     - 1.8.0-pre.1
   dependencies:
@@ -1498,6 +1506,7 @@ m_ResolvedPackages:
     - 5.1.3
     - 5.1.4
     - 5.1.5
+    - 5.1.6
     - 6.0.0-pre.3
     - 6.0.0-pre.4
     - 6.0.0-pre.5
@@ -1514,9 +1523,11 @@ m_ResolvedPackages:
     - 6.1.0-pre.3
     - 6.1.0-pre.4
     - 6.1.0-pre.5
+    - 6.1.0
     compatible:
     - 5.1.5
-    recommended: 5.1.5
+    - 5.1.6
+    recommended: 5.1.6
     deprecated: []
   dependencies:
   - name: com.unity.xr.arfoundation
@@ -1744,6 +1755,7 @@ m_ResolvedPackages:
     - 5.1.3
     - 5.1.4
     - 5.1.5
+    - 5.1.6
     - 6.0.0-pre.3
     - 6.0.0-pre.4
     - 6.0.0-pre.5
@@ -1760,9 +1772,11 @@ m_ResolvedPackages:
     - 6.1.0-pre.3
     - 6.1.0-pre.4
     - 6.1.0-pre.5
+    - 6.1.0
     compatible:
     - 5.1.5
-    recommended: 5.1.5
+    - 5.1.6
+    recommended: 5.1.6
     deprecated: []
   dependencies:
   - name: com.unity.editorcoroutines
@@ -2024,6 +2038,7 @@ m_ResolvedPackages:
     - 5.1.3
     - 5.1.4
     - 5.1.5
+    - 5.1.6
     - 6.0.0-pre.3
     - 6.0.0-pre.4
     - 6.0.0-pre.5
@@ -2040,9 +2055,11 @@ m_ResolvedPackages:
     - 6.1.0-pre.3
     - 6.1.0-pre.4
     - 6.1.0-pre.5
+    - 6.1.0
     compatible:
     - 5.1.5
-    recommended: 5.1.5
+    - 5.1.6
+    recommended: 5.1.6
     deprecated: []
   dependencies:
   - name: com.unity.editorcoroutines
@@ -2201,6 +2218,8 @@ m_ResolvedPackages:
     - 3.0.6
     - 3.0.7
     - 3.1.0-pre.1
+    - 3.1.0
+    - 3.1.1
     compatible:
     - 2.6.3
     - 2.6.4
@@ -2214,6 +2233,8 @@ m_ResolvedPackages:
     - 3.0.6
     - 3.0.7
     - 3.1.0-pre.1
+    - 3.1.0
+    - 3.1.1
     recommended: 2.6.4
     deprecated: []
   dependencies:
@@ -4596,10 +4617,12 @@ m_ResolvedPackages:
     - 2.4.0
     - 2.5.0
     - 2.5.1
+    - 2.5.2
     compatible:
     - 2.4.0
     - 2.5.0
     - 2.5.1
+    - 2.5.2
     recommended: 2.4.0
     deprecated: []
   dependencies:
