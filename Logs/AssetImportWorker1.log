@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2022.3/china_unity/release' branch; Version is '2022.3.55f1c1 (06b99830297d) revision 440728'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit ProfessionalWorkstation' Language: 'en' Physical Memory: 32620 MB
+OS: 'Windows 10  (10.0.19045) 64bit CoreCountrySpecific' Language: 'zh' Physical Memory: 16250 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-D:\Software\Unity\Eidition\Editor\Unity.exe
+E:\Unity\2022.3.55f1c1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-D:/Software/Unity/FinalProject/GraduationDesign
+F:/Graduation.1/C.A.R.S-GraduationDesign
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-53980
-Successfully changed project path to: D:/Software/Unity/FinalProject/GraduationDesign
-D:/Software/Unity/FinalProject/GraduationDesign
+55731
+Successfully changed project path to: F:/Graduation.1/C.A.R.S-GraduationDesign
+F:/Graduation.1/C.A.R.S-GraduationDesign
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,71 +49,69 @@ D:/Software/Unity/FinalProject/GraduationDesign
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [5968]  Target information:
+Player connection [21956]  Target information:
 
-Player connection [5968]  * "[IP] 172.29.26.251 [Port] 0 [Flags] 2 [Guid] 1088279682 [EditorId] 1088279682 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-O0OSGOD3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [21956]  * "[IP] 192.168.0.104 [Port] 0 [Flags] 2 [Guid] 2809995088 [EditorId] 2809995088 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-IH7UK6EV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [5968]  * "[IP] 172.29.24.224 [Port] 0 [Flags] 2 [Guid] 1088279682 [EditorId] 1088279682 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-O0OSGOD3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [5968] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [5968] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [21956] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [21956] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-Refreshing native plugins compatible for Editor in 57.42 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 9.47 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.55f1c1 (06b99830297d)
-[Subsystems] Discovering subsystems at path D:/Software/Unity/Eidition/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Software/Unity/FinalProject/GraduationDesign/Assets
+[Subsystems] Discovering subsystems at path E:/Unity/2022.3.55f1c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/Graduation.1/C.A.R.S-GraduationDesign/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2560)
+    Renderer: NVIDIA GeForce GTX 1650 Ti with Max-Q Design (ID=0x1f95)
     Vendor:   NVIDIA
-    VRAM:     12115 MB
-    Driver:   32.0.15.7283
+    VRAM:     3962 MB
+    Driver:   30.0.15.1233
 Initialize mono
-Mono path[0] = 'D:/Software/Unity/Eidition/Editor/Data/Managed'
-Mono path[1] = 'D:/Software/Unity/Eidition/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'D:/Software/Unity/Eidition/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56360
+Mono path[0] = 'E:/Unity/2022.3.55f1c1/Editor/Data/Managed'
+Mono path[1] = 'E:/Unity/2022.3.55f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'E:/Unity/2022.3.55f1c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56508
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Software/Unity/Eidition/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: D:/Software/Unity/Eidition/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.040468 seconds.
-- Loaded All Assemblies, in  0.639 seconds
+Register platform support module: E:/Unity/2022.3.55f1c1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: E:/Unity/2022.3.55f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004510 seconds.
+- Loaded All Assemblies, in  0.382 seconds
 Native extension for WindowsStandalone target not found
-Native extension for Android target not found
+Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.356 seconds
-Domain Reload Profiling: 985ms
-	BeginReloadAssembly (212ms)
+- Finished resetting the current domain, in  0.244 seconds
+Domain Reload Profiling: 627ms
+	BeginReloadAssembly (117ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (48ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (141ms)
-	LoadAllAssembliesAndSetupDomain (215ms)
-		LoadAssemblies (203ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (163ms)
+		LoadAssemblies (116ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (210ms)
-			TypeCache.Refresh (209ms)
-				TypeCache.ScanAssembly (192ms)
+		AnalyzeDomain (161ms)
+			TypeCache.Refresh (159ms)
+				TypeCache.ScanAssembly (146ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (357ms)
+	FinalizeReload (245ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (303ms)
+		SetupLoadedEditorAssemblies (197ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (81ms)
+			InitializePlatformSupportModulesInManaged (8ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (155ms)
-			ProcessInitializeOnLoadMethodAttributes (60ms)
+			ProcessInitializeOnLoadAttributes (141ms)
+			ProcessInitializeOnLoadMethodAttributes (42ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -122,9 +120,9 @@ Domain Reload Profiling: 985ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.237 seconds
+- Loaded All Assemblies, in  0.656 seconds
 Native extension for WindowsStandalone target not found
-Native extension for Android target not found
+Native extension for WebGL target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
@@ -136,878 +134,58 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.166 seconds
-Domain Reload Profiling: 2373ms
-	BeginReloadAssembly (259ms)
+- Finished resetting the current domain, in  1.324 seconds
+Domain Reload Profiling: 1979ms
+	BeginReloadAssembly (144ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
-	RebuildCommonClasses (46ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (81ms)
-	LoadAllAssembliesAndSetupDomain (807ms)
-		LoadAssemblies (706ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (429ms)
+		LoadAssemblies (276ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (276ms)
-			TypeCache.Refresh (211ms)
-				TypeCache.ScanAssembly (190ms)
-			ScanForSourceGeneratedMonoScriptInfo (42ms)
-			ResolveRequiredComponents (21ms)
-	FinalizeReload (1167ms)
+		AnalyzeDomain (239ms)
+			TypeCache.Refresh (175ms)
+				TypeCache.ScanAssembly (155ms)
+			ScanForSourceGeneratedMonoScriptInfo (39ms)
+			ResolveRequiredComponents (24ms)
+	FinalizeReload (1324ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (952ms)
+		SetupLoadedEditorAssemblies (1149ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (38ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (209ms)
-			ProcessInitializeOnLoadAttributes (523ms)
-			ProcessInitializeOnLoadMethodAttributes (140ms)
-			AfterProcessingInitializeOnLoad (36ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.18 seconds
-Refreshing native plugins compatible for Editor in 38.07 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6623 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (1.6 MB). Loaded Objects now: 7082.
-Memory consumption went from 256.2 MB to 254.6 MB.
-Total: 6.178100 ms (FindLiveObjects: 0.502800 ms CreateObjectMapping: 0.449400 ms MarkObjects: 4.409400 ms  DeleteObjects: 0.815300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_Fusion' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_Fusion/Scripts/EasyAR.Sense.Sample.MotionTracking_Fusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_Fusion' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_Fusion/Scripts/EasyAR.Sense.Sample.MotionTracking_Fusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_ImageTarget' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.MotionTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_ImageTarget' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.MotionTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiTracker' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiTracker' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_CloudRecognition' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_CloudRecognition/Scripts/EasyAR.Sense.Sample.ImageTracking_CloudRecognition.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_CloudRecognition' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_CloudRecognition/Scripts/EasyAR.Sense.Sample.ImageTracking_CloudRecognition.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Building' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Building' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.AllSamplesLauncher' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/AllSamplesLauncher/Scripts/EasyAR.Sense.Sample.AllSamplesLauncher.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.AllSamplesLauncher' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/AllSamplesLauncher/Scripts/EasyAR.Sense.Sample.AllSamplesLauncher.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_TargetOnTheFly/Scripts/EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_TargetOnTheFly/Scripts/EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.FrameRecording' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/FrameRecording/Scripts/EasyAR.Sense.Sample.FrameRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.FrameRecording' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/FrameRecording/Scripts/EasyAR.Sense.Sample.FrameRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking/Scripts/EasyAR.Sense.Sample.SurfaceTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking/Scripts/EasyAR.Sense.Sample.SurfaceTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Coloring3D' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Coloring3D/Scripts/EasyAR.Sense.Sample.ImageTracking_Coloring3D.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Coloring3D' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Coloring3D/Scripts/EasyAR.Sense.Sample.ImageTracking_Coloring3D.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_CustomCamera' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_CustomCamera/Scripts/EasyAR.Sense.Sample.Camera_CustomCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_CustomCamera' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_CustomCamera/Scripts/EasyAR.Sense.Sample.Camera_CustomCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SameImage' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SameImage/Scripts/EasyAR.Sense.Sample.MultiTarget_SameImage.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SameImage' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SameImage/Scripts/EasyAR.Sense.Sample.MultiTarget_SameImage.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ObjectTracking' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ObjectTracking/Scripts/EasyAR.Sense.Sample.ObjectTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ObjectTracking' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ObjectTracking/Scripts/EasyAR.Sense.Sample.ObjectTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_SparseSpatialMap/Scripts/EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_SparseSpatialMap/Scripts/EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_MotionFusion' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_MotionFusion/Scripts/EasyAR.Sense.Sample.ImageTracking_MotionFusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_MotionFusion' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_MotionFusion/Scripts/EasyAR.Sense.Sample.ImageTracking_MotionFusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Video' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Video/Scripts/EasyAR.Sense.Sample.ImageTracking_Video.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Video' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Video/Scripts/EasyAR.Sense.Sample.ImageTracking_Video.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiType' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiType/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiType.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiType' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiType/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiType.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_VideoCamera' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_VideoCamera/Scripts/EasyAR.Sense.Sample.Camera_VideoCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_VideoCamera' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_VideoCamera/Scripts/EasyAR.Sense.Sample.Camera_VideoCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Dense_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Dense_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.VideoRecording' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/VideoRecording/Scripts/EasyAR.Sense.Sample.VideoRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.VideoRecording' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/VideoRecording/Scripts/EasyAR.Sense.Sample.VideoRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking_ImageTarget' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.SurfaceTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking_ImageTarget' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.SurfaceTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_ImageTarget/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_ImageTarget/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking/Scripts/EasyAR.Sense.Sample.MotionTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking/Scripts/EasyAR.Sense.Sample.MotionTracking.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Targets' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Targets/Scripts/EasyAR.Sense.Sample.ImageTracking_Targets.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Targets' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Targets/Scripts/EasyAR.Sense.Sample.ImageTracking_Targets.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SingleTracker' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SingleTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_SingleTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SingleTracker' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SingleTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_SingleTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Dense_BallGame' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Dense_BallGame/Scripts/EasyAR.Sense.Sample.SpatialMap_Dense_BallGame.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Dense_BallGame' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Dense_BallGame/Scripts/EasyAR.Sense.Sample.SpatialMap_Dense_BallGame.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Localizing/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Localizing/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing.asmdef)
-Caller must complete domain reload
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_Fusion' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_Fusion/Scripts/EasyAR.Sense.Sample.MotionTracking_Fusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_Fusion' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_Fusion/Scripts/EasyAR.Sense.Sample.MotionTracking_Fusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_ImageTarget' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.MotionTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_ImageTarget' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.MotionTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiTracker' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiTracker' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_CloudRecognition' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_CloudRecognition/Scripts/EasyAR.Sense.Sample.ImageTracking_CloudRecognition.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_CloudRecognition' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_CloudRecognition/Scripts/EasyAR.Sense.Sample.ImageTracking_CloudRecognition.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Building' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Building' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.AllSamplesLauncher' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/AllSamplesLauncher/Scripts/EasyAR.Sense.Sample.AllSamplesLauncher.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.AllSamplesLauncher' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/AllSamplesLauncher/Scripts/EasyAR.Sense.Sample.AllSamplesLauncher.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_TargetOnTheFly/Scripts/EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_TargetOnTheFly/Scripts/EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.FrameRecording' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/FrameRecording/Scripts/EasyAR.Sense.Sample.FrameRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.FrameRecording' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/FrameRecording/Scripts/EasyAR.Sense.Sample.FrameRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking/Scripts/EasyAR.Sense.Sample.SurfaceTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking/Scripts/EasyAR.Sense.Sample.SurfaceTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Coloring3D' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Coloring3D/Scripts/EasyAR.Sense.Sample.ImageTracking_Coloring3D.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Coloring3D' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Coloring3D/Scripts/EasyAR.Sense.Sample.ImageTracking_Coloring3D.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_CustomCamera' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_CustomCamera/Scripts/EasyAR.Sense.Sample.Camera_CustomCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_CustomCamera' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_CustomCamera/Scripts/EasyAR.Sense.Sample.Camera_CustomCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SameImage' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SameImage/Scripts/EasyAR.Sense.Sample.MultiTarget_SameImage.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SameImage' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SameImage/Scripts/EasyAR.Sense.Sample.MultiTarget_SameImage.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ObjectTracking' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ObjectTracking/Scripts/EasyAR.Sense.Sample.ObjectTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ObjectTracking' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ObjectTracking/Scripts/EasyAR.Sense.Sample.ObjectTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_SparseSpatialMap/Scripts/EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_SparseSpatialMap/Scripts/EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_MotionFusion' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_MotionFusion/Scripts/EasyAR.Sense.Sample.ImageTracking_MotionFusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_MotionFusion' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_MotionFusion/Scripts/EasyAR.Sense.Sample.ImageTracking_MotionFusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Video' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Video/Scripts/EasyAR.Sense.Sample.ImageTracking_Video.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Video' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Video/Scripts/EasyAR.Sense.Sample.ImageTracking_Video.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiType' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiType/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiType.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiType' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiType/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiType.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_VideoCamera' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_VideoCamera/Scripts/EasyAR.Sense.Sample.Camera_VideoCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_VideoCamera' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_VideoCamera/Scripts/EasyAR.Sense.Sample.Camera_VideoCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Dense_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Dense_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.VideoRecording' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/VideoRecording/Scripts/EasyAR.Sense.Sample.VideoRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.VideoRecording' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/VideoRecording/Scripts/EasyAR.Sense.Sample.VideoRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking_ImageTarget' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.SurfaceTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking_ImageTarget' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.SurfaceTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_ImageTarget/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_ImageTarget/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking/Scripts/EasyAR.Sense.Sample.MotionTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking/Scripts/EasyAR.Sense.Sample.MotionTracking.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Targets' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Targets/Scripts/EasyAR.Sense.Sample.ImageTracking_Targets.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Targets' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Targets/Scripts/EasyAR.Sense.Sample.ImageTracking_Targets.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SingleTracker' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SingleTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_SingleTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SingleTracker' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SingleTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_SingleTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Dense_BallGame' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Dense_BallGame/Scripts/EasyAR.Sense.Sample.SpatialMap_Dense_BallGame.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Dense_BallGame' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Dense_BallGame/Scripts/EasyAR.Sense.Sample.SpatialMap_Dense_BallGame.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Localizing/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Localizing/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing.asmdef)
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.187 seconds
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_Fusion' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_Fusion/Scripts/EasyAR.Sense.Sample.MotionTracking_Fusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_Fusion' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_Fusion/Scripts/EasyAR.Sense.Sample.MotionTracking_Fusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_ImageTarget' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.MotionTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_ImageTarget' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.MotionTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiTracker' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiTracker' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_CloudRecognition' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_CloudRecognition/Scripts/EasyAR.Sense.Sample.ImageTracking_CloudRecognition.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_CloudRecognition' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_CloudRecognition/Scripts/EasyAR.Sense.Sample.ImageTracking_CloudRecognition.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Building' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Building' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.AllSamplesLauncher' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/AllSamplesLauncher/Scripts/EasyAR.Sense.Sample.AllSamplesLauncher.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.AllSamplesLauncher' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/AllSamplesLauncher/Scripts/EasyAR.Sense.Sample.AllSamplesLauncher.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_TargetOnTheFly/Scripts/EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_TargetOnTheFly/Scripts/EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.FrameRecording' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/FrameRecording/Scripts/EasyAR.Sense.Sample.FrameRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.FrameRecording' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/FrameRecording/Scripts/EasyAR.Sense.Sample.FrameRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking/Scripts/EasyAR.Sense.Sample.SurfaceTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking/Scripts/EasyAR.Sense.Sample.SurfaceTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Coloring3D' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Coloring3D/Scripts/EasyAR.Sense.Sample.ImageTracking_Coloring3D.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Coloring3D' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Coloring3D/Scripts/EasyAR.Sense.Sample.ImageTracking_Coloring3D.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_CustomCamera' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_CustomCamera/Scripts/EasyAR.Sense.Sample.Camera_CustomCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_CustomCamera' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_CustomCamera/Scripts/EasyAR.Sense.Sample.Camera_CustomCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SameImage' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SameImage/Scripts/EasyAR.Sense.Sample.MultiTarget_SameImage.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SameImage' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SameImage/Scripts/EasyAR.Sense.Sample.MultiTarget_SameImage.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ObjectTracking' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ObjectTracking/Scripts/EasyAR.Sense.Sample.ObjectTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ObjectTracking' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ObjectTracking/Scripts/EasyAR.Sense.Sample.ObjectTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_SparseSpatialMap/Scripts/EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_SparseSpatialMap/Scripts/EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_MotionFusion' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_MotionFusion/Scripts/EasyAR.Sense.Sample.ImageTracking_MotionFusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_MotionFusion' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_MotionFusion/Scripts/EasyAR.Sense.Sample.ImageTracking_MotionFusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Video' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Video/Scripts/EasyAR.Sense.Sample.ImageTracking_Video.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Video' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Video/Scripts/EasyAR.Sense.Sample.ImageTracking_Video.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiType' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiType/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiType.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiType' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiType/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiType.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_VideoCamera' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_VideoCamera/Scripts/EasyAR.Sense.Sample.Camera_VideoCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_VideoCamera' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_VideoCamera/Scripts/EasyAR.Sense.Sample.Camera_VideoCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Dense_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Dense_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.VideoRecording' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/VideoRecording/Scripts/EasyAR.Sense.Sample.VideoRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.VideoRecording' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/VideoRecording/Scripts/EasyAR.Sense.Sample.VideoRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking_ImageTarget' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.SurfaceTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking_ImageTarget' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.SurfaceTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_ImageTarget/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_ImageTarget/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking/Scripts/EasyAR.Sense.Sample.MotionTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking/Scripts/EasyAR.Sense.Sample.MotionTracking.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Targets' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Targets/Scripts/EasyAR.Sense.Sample.ImageTracking_Targets.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Targets' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Targets/Scripts/EasyAR.Sense.Sample.ImageTracking_Targets.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SingleTracker' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SingleTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_SingleTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SingleTracker' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SingleTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_SingleTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Dense_BallGame' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Dense_BallGame/Scripts/EasyAR.Sense.Sample.SpatialMap_Dense_BallGame.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Dense_BallGame' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Dense_BallGame/Scripts/EasyAR.Sense.Sample.SpatialMap_Dense_BallGame.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Localizing/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Localizing/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing.asmdef)
-System.NullReferenceException: Object reference not set to an instance of an object
-  at UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.RenderPipelineValidation..cctor () [0x0000d] in D:\Software\Unity\FinalProject\GraduationDesign\Assets\UnityARsamples\Samples\XR Interaction Toolkit\3.0.4\Starter Assets\Scripts\MaterialPipelineHandler.cs:16 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Error decompressing GZ: 
-7-Zip (z) 24.09 (x64) : Copyright (c) 1999-2024 Igor Pavlov : 2024-11-29
-
-Scanning the drive for archives:
-1 file, 27519946 bytes (27 MiB)
-
-Extracting archive: C:\Users\27385\Downloads\EasyARSenseUnityPlugin_4.6.5+3052.b2f1b028\com.easyar.sense-4.6.5+3052.b2f1b028\package\Samples~\StreamingAssets\assets.unitypackage
---
-Path = C:\Users\27385\Downloads\EasyARSenseUnityPlugin_4.6.5+3052.b2f1b028\com.easyar.sense-4.6.5+3052.b2f1b028\package\Samples~\StreamingAssets\assets.unitypackage
-Type = gzip
-Headers Size = 23
-
-ERROR: Cannot open output file : The process cannot access the file because it is being used by another process. : Temp\TarGZ\archtemp.tar
-
-Sub items Errors: 1
-
-Archives with Errors: 1
-
-Sub items Errors: 1
-
-Details: path='Packages/com.easyar.sense/Samples~/StreamingAssets/assets.unitypackage' shortpath='Packages/com.easyar.sense/Samples~/StreamingAssets/assets.unitypackage' out='Temp/TarGZ'
-Failed to import package with error: Couldn't decompress package
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.AssetDatabase:ImportPackage (string,bool)
-easyar.FileUtil:ImportSampleStreamingAssets () (at C:/Users/27385/Downloads/EasyARSenseUnityPlugin_4.6.5+3052.b2f1b028/com.easyar.sense-4.6.5+3052.b2f1b028/package/Runtime/Utility/FileUtil.cs:169)
-SurfaceTracking_ImageTarget.UIController:ImportSampleStreamingAssets () (at Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking_ImageTarget/Scripts/UIController.cs:33)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-[C:/Users/27385/Downloads/EasyARSenseUnityPlugin_4.6.5+3052.b2f1b028/com.easyar.sense-4.6.5+3052.b2f1b028/package/Runtime/Utility/FileUtil.cs line 169]
-
-Error decompressing TAR: 
-7-Zip (z) 24.09 (x64) : Copyright (c) 1999-2024 Igor Pavlov : 2024-11-29
-
-Scanning the drive for archives:
-
-ERROR: The system cannot find the file specified.
-Temp\TarGZ\archtemp.tar
-
-
-
-System ERROR:
-The system cannot find the file specified.
-
-Details: path='Temp/TarGZ/archtemp.tar' shortpath='pð£À,' out='Temp/TarGZ'
-Failed to import package with error: Couldn't decompress package
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.AssetDatabase:ImportPackage (string,bool)
-easyar.FileUtil:ImportSampleStreamingAssets () (at C:/Users/27385/Downloads/EasyARSenseUnityPlugin_4.6.5+3052.b2f1b028/com.easyar.sense-4.6.5+3052.b2f1b028/package/Runtime/Utility/FileUtil.cs:169)
-SurfaceTracking_ImageTarget.UIController:ImportSampleStreamingAssets () (at Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking_ImageTarget/Scripts/UIController.cs:33)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-[C:/Users/27385/Downloads/EasyARSenseUnityPlugin_4.6.5+3052.b2f1b028/com.easyar.sense-4.6.5+3052.b2f1b028/package/Runtime/Utility/FileUtil.cs line 169]
-
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  4.096 seconds
-Domain Reload Profiling: 5250ms
-	BeginReloadAssembly (334ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (53ms)
-	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (69ms)
-	LoadAllAssembliesAndSetupDomain (693ms)
-		LoadAssemblies (791ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (105ms)
-			TypeCache.Refresh (20ms)
-				TypeCache.ScanAssembly (7ms)
-			ScanForSourceGeneratedMonoScriptInfo (63ms)
-			ResolveRequiredComponents (22ms)
-	FinalizeReload (4097ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1720ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (36ms)
+			InitializePlatformSupportModulesInManaged (5ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (250ms)
-			ProcessInitializeOnLoadAttributes (377ms)
-			ProcessInitializeOnLoadMethodAttributes (1014ms)
-			AfterProcessingInitializeOnLoad (39ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Refreshing native plugins compatible for Editor in 40.12 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6429 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 36 unused Assets / (2.6 MB). Loaded Objects now: 7087.
-Memory consumption went from 223.1 MB to 220.5 MB.
-Total: 6.800600 ms (FindLiveObjects: 0.528500 ms CreateObjectMapping: 0.559500 ms MarkObjects: 4.179700 ms  DeleteObjects: 1.531400 ms)
-
-Prepare: number of updated asset objects reloaded= 9
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:scripting/monoscript/fileName/ARInteractorSpawnTrigger.cs: d1094fe06313f6bd24d1913718162fe8 -> 061f08b18d9b256e73a8a9e5cf9f6f30
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building: 1402a7fc77ba2f0cfd7df91363708214 -> afa010ab0df941be36ad29524b184e3a
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.ImageTracking_CloudRecognition: dadfa9b2bbe34a25c74faa8a5a94c76b -> 7e75347906b6ca081c75b10cff810824
-  custom:scripting/monoscript/fileName/MapGridController.cs: 65424536cee44909223117ecf836fb62 -> 5ef3cdb92b00fe70eacb07b4dafa1078
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.MultiTarget_SingleTracker: ac9256bf8f81147859f4bc6f5c6c576a -> 0db8ea8471f1c3028b8fa27868b29aed
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:scripting/monoscript/fileName/MultiAnchorTeleportReticle.cs: 4f128c8a453f724d64f8b2a36e0cf239 -> 2cd50d24a95a2957a547f1971842c723
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.SpatialMap_Dense_BallGame: 33f08dea4fb83790832c6ee6616ace0f -> d92247541e4b08734729c760e04608f0
-  custom:scripting/monoscript/fileName/MapSession.cs: 850f0c0574d924e40c29793cf9d7ed47 -> 77d7cf32ab126dd7b383c87cbcb9c77a
-  custom:scripting/monoscript/fileName/GoalManager.cs: 03da32e908aa3e27259c43ed8de259b9 -> 7735e2faec4b0bd26a07d04b73496118
-  custom:scripting/monoscript/fileName/CustomCameraSource.cs: 7474abc153bf8e507c2a63562c5b2b30 -> 99b35441016cd2c3cc4090a8c9e63026
-  custom:scripting/monoscript/fileName/ViewManager.cs: dd108cab7f207287fec095915ced8e52 -> efa7d9cc81bd4b48163a92445cdccb00
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.MultiTarget_MultiTracker: fea1b1c437d5e03a1d1a3057397e561d -> fb7dd8538e8ed30a5ce12074575d5337
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly: 7a80635215eb5c27095bbdbdeee508b6 -> 1b1b49a73f47ad1531d210cc429c4c4c
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.MotionTracking_ImageTarget: ad7185cc29d4a0dc43bea82dba9d17b9 -> 089447cd205fe0851379aac48717711d
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.VideoRecording: e3938cf5fb7e02ffb0260ddab43b073b -> 1cca6933799fd21e022011d39b1cc012
-  custom:scripting/monoscript/fileName/ARTemplateMenuManager.cs: ad415d9e933490781a672ab45d2d6068 -> e9c124bfc2788ca0fc8364a60081056d
-  custom:scripting/monoscript/fileName/CutoutMaskUI.cs: 1691ae5a04123b766d074d11bc96ef0f -> 50f014e9a5c0f2717fc019535c11d0c1
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:scripting/monoscript/fileName/MainScene.cs: 5c0447fd81bf896e9ae22f636e09adcd -> 3ce86a18bd8ad2d9e32fe762dc4a915a
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:scripting/monoscript/fileName/StarterAssetsSampleProjectValidation.cs: f5be5cbed9404299362a43a813697030 -> 41923d4e3ad340b10762e754770f8031
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:scripting/monoscript/fileName/Dragger.cs: a8c75c6f4e9d4a69e99f4bb9b5ed5c81 -> 82cdd85227e3ef331962176d012815ec
-  custom:scripting/monoscript/fileName/RotationAxisLockGrabTransformer.cs: 5129dc284a7446125707dc2c133174b9 -> e29b029f1c67e78124c804e28e38fc11
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:scripting/monoscript/fileName/TouchController.cs: 9e1bfefbe826f1802a1bdfb498cd0860 -> fc940d66630efe447ca7b1222d784008
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.Camera_CustomCamera: d8473756a3969f045527e4ed9cd82a06 -> f3b403cf17ad5f94bac5d58aed4efb6a
-  custom:scripting/monoscript/fileName/SceneTemplate_RotateCube.cs: 2156e1bc8ce9f90c71f7b341aa0c014c -> 965266725d3ae5c2660f423c8f51694c
-  custom:scripting/monoscript/fileName/MapBuilding_Sparse_DenseSample.cs: 188b0a141e204c61375a6cc14779ba68 -> b05f7ea9d1d9a9160ef2aeb75574ea53
-  custom:scripting/monoscript/fileName/DestroySelf.cs: cc2ccc0cad01a399dac0b387c75d593e -> 4403ad9e1588a465a19ece24fa8e9b79
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.ImageTracking_Coloring3D: 4671c4b5bdce7bf5b5c55de31dab63bd -> 9425760a5d5d1d6e82037507df695de4
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/ObjectSpawner.cs: a0115cad25fdcab2a50f1737a4f7a2e6 -> 9dd8da7c17a93d30bb31c5c6f3c19a83
-  custom:scripting/monoscript/fileName/CameraRecorder.cs: 45736cf3f54cceabab8eddb144d84a93 -> 70868399faa6a93d9bde3fe4e2513caa
-  custom:scripting/monoscript/fileName/MapLocalizing_SparseSample.cs: 408337be4e44239f2a8a10bd07ff419d -> f4b6a0459404f51f61f782be95a3f663
-  custom:scripting/monoscript/fileName/CreateViewController.cs: 4b9686bfe361b01c176afef282d68884 -> 2652dcdc6d1a804e77cc7bec4506393d
-  custom:scripting/precompiled-assembly-types:Unity.XR.Interaction.Toolkit.Samples.StarterAssets: d151c3c718600e8600405e89f4f08483 -> 49cd41c371b9955e2f45e639797f7a92
-  custom:scripting/precompiled-assembly-types:Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets: ab1bfc38de6e1404b7e44ecc1be728fe -> d8cfdfaeb241ca6f892c1fd32574d94f
-  custom:scripting/monoscript/fileName/PropCellController.cs: 74065217dc7e7bc3da51515ca162d39f -> 0afe7254b43f550963830a6634e738aa
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/ObjectTrackingSample.cs: 694371aac7e7d8a7761795a0d96c8a63 -> 9cc2af1997b40c37ac9b2781438ecfbd
-  custom:scripting/monoscript/fileName/ControllerInputActionManager.cs: 03b39c2043aa8447f4a16a31602ff781 -> 22ee03fd8ae67859d3530e7bd1d64c40
-  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 3bc6d319f32b0702a843c185bda31921 -> b0121aa87206961d39ee35937b27b1a1
-  custom:scripting/precompiled-assembly-types:Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor: dfb249410f2442c0b801e6a58086de6b -> d5a0480ae0872006eb5e91fd694521ea
-  custom:scripting/monoscript/fileName/EasyARARCoreARKitWrapperSample.cs: a4be9c9a3df98a81712d5074e9388da5 -> 220e1f0c3b46810ad3b58461b5f628a9
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.Camera_VideoCamera: 3b2f2f24b3e87102cce2e7ae6eb1a25e -> 9db893220b95f7a128f6a4842aff41a1
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.ImageTracking_Video: 983932a90dd8c00eb7cbdec2c08b230c -> c7c792cf665cf3d8956f3e9a7020f4bd
-  custom:scripting/monoscript/fileName/GazeInputManager.cs: 67f937649a15c9a733fb7836673b73e7 -> 155625cd07bc4e1e834f6e8f7d58bb43
-  custom:scripting/monoscript/fileName/ARSampleMenuManager.cs: 41d0d8f226aab61d56cf3adcc1308d31 -> fbb7e840cb648a4eec5fda75c1c1bcbc
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:scripting/monoscript/fileName/ControllerAnimator.cs: c7f2ed3cd3cc5ec4aea95c805bcf5042 -> b14edcd8661779a23eec55dd7c421ab8
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.ImageTracking_MotionFusion: 58190bb4d82fbf8a92b59b15fa5078d4 -> 19959dcac4844bbd412e4016cf0c4992
-  custom:scripting/monoscript/fileName/RecordingSample.cs: 841af28049c7fd84683dd5eb33939483 -> d769e242c499408ade7c8edb543d8dbc
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:scripting/monoscript/fileName/SceneRecorder.cs: 871a98ee355cb41eefbd9985f89c3850 -> f9823a01f33fc748ade8424d9ec9cd0b
-  custom:scripting/monoscript/fileName/MapCellController.cs: 0dd6fd3108885efc06c23bbd24c32755 -> 52040ff7b81738354c5dd6bec1901ad8
-  custom:scripting/monoscript/fileName/TeleportVolumeAnchorAffordanceStateLink.cs: 34f4b6182a7e352e3e3cf5d19e1ae819 -> a1056e833fcba5322134a03c0f07a7e1
-  custom:scripting/monoscript/fileName/ImageTrackingSample.cs: 0d86546fb73e35c78ddd79c2e5fdbb3d -> fcaf2654f8097b0f11f01c7d0874a59c
-  custom:scripting/monoscript/fileName/VideoPlayerAgent.cs: 4a84af5ea41c0d43e80c48c81bfda0f7 -> 82b63d6ff27f2746758f86f64f2537a8
-  custom:scripting/monoscript/fileName/UIController.cs: e545f2cabdac5ac8f0cd614150e200ba -> b01872d6ec9c7090bdbae2fda967fae2
-  custom:scripting/monoscript/fileName/OneShot.cs: 724cca339c27ec73befd13c12196d849 -> 35dc9a0e73e9b1ab4d355ef717217d8c
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.FrameRecording: 5ee2fa8bf266a7fa55f541aa66f2c4ec -> ed78ef66b492b1d76895d8296de1270f
-  custom:scripting/monoscript/fileName/Sample.cs: 17f3303dcb398bb5aa50d216fef48f52 -> 8846456d8e334848695238b7d041f3f3
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.MultiTarget_SameImage: d7b396e254dbeb5c0b54e315a081d6fc -> 79ffef81bc79391d2be2658cd3e5cd34
-  custom:scripting/monoscript/fileName/XRPokeFollowAffordance.cs: cd2f8b7601fef2e629a2382f9c5b79a5 -> 621a47fc1058589b07b340fb03547357
-  custom:scripting/monoscript/fileName/MainViewController.cs: 53c61f3662fee155b75efeb5e3a3ad6f -> 781b8458f714c73e5b55660fce2c960d
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/ARFeatheredPlaneMeshVisualizerCompanion.cs: 714ef20837827a2dec9a8c99b5c159c3 -> e0b1d7fae8920c73874b85905072296f
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.SurfaceTracking_ImageTarget: 06a7f381f072e86a132fbc23a3076728 -> 7a565da2ac87ea1047b1c3458492902b
-  custom:scripting/monoscript/fileName/MultiTargetSameImageSample.cs: 228c4e817f46e14c883c390b845db693 -> e549cf12dab963dd6e1913f601b83246
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.SurfaceTracking: 1f53c90b3418031471638714ac17a4c7 -> d80a4a775a3b9c8bdc5c65aaa06841aa
-  custom:scripting/monoscript/fileName/Coloring3D.cs: 0349d5838e9c918aabf5893af1cc5e6e -> 3efea14cdfeb98f6e02ee84292bfef27
-  custom:scripting/monoscript/fileName/PropGridController.cs: ecb3559132c0983954cae5b5aa31a566 -> 8804bd64a11c008fdfee49356b72e0d3
-  custom:scripting/monoscript/fileName/TargetOnTheFlySample.cs: 156850c8dc14c44fbaf797e1c0dd0fe6 -> 1e94da2d79d1fda69102591bbae648b5
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.AllSamplesLauncher: 7fc3aa14f98b1fbdf9e5bab7f70f459c -> 41f08bfd010c84c02fcdcb83e893934e
-  custom:scripting/monoscript/fileName/EditViewController.cs: b05b53697b1bbb4245e1f52bb44142b4 -> 8813a5bdef158ac4ae81572a72f31bd0
-  custom:scripting/monoscript/fileName/MapBuilding_SparseSample.cs: 80670529161f4d49f2d009019278b9ab -> e4b835d74854b64a1c3726f766ceb0b9
-  custom:scripting/monoscript/fileName/ARContactSpawnTrigger.cs: 764073f596d455780267d874017aef5c -> 7e1304e93ee3ab3ff0292eb1ad0b27b3
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing: 41c2ced4ecf1e3f74c7aa79a5382ad89 -> e7e2d99391ade24ed700f72a2cc68921
-  custom:scripting/monoscript/fileName/SparseSpatailMapSample.cs: cb250b66a51fc7b2d806c028b45d594b -> 53227ef19285e270c07ef6615166aaff
-  custom:scripting/monoscript/fileName/EasyARAREngineInteropSample.cs: ff6dec9a913db7ad7299a581d3dce350 -> 2ef13f53679ade01bdc636d719221c48
-  custom:scripting/monoscript/fileName/MapMetaManager.cs: 13d0bf5fa461a19a38be848d7b7f018e -> 41ccfd1215019d536db1b12178c5b65c
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.ObjectTracking: effcce2911e0dc27ea0521f8545a02e5 -> 7cac1763035074042a337b56accc3fe6
-  custom:scripting/monoscript/fileName/MapMeta.cs: a2fb7ae6f24345d2d4ad56cb4378433b -> 1f167d7661b34e3710477f297d595d8f
-  custom:scripting/monoscript/fileName/MotionTrackingSample.cs: a7edf595477a91621da3d1d6ccee0443 -> 793251821d5acdae161db077a86900e1
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.MultiTarget_MultiType: c12e73c9d3fa0869a5b16939151da0d8 -> f815b46ba2b33b0483ac0a2a2d76429b
-  custom:scripting/precompiled-assembly-types:Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor: 84510a5fb9726023681a3569326ca78b -> ac93a809c4c32485b88edb1b417cdac1
-  custom:scripting/monoscript/fileName/IncrementUIText.cs: c0a952d102317224ae615d46a68bb518 -> f7d8385b142d66834e0ec965e04f971f
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap: ef6fe71f82b6c919a60340461e813cda -> af7a3220737d0d953d0ec3c910cab405
-  custom:scripting/monoscript/fileName/ImageTargetVideoSample.cs: e03878170913da99f6a9c87087d77d75 -> 5b3d69915ccea78a205e38d265a1b232
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:scripting/monoscript/fileName/VideoCameraSample.cs: 08dbee2ee235d431c0859ade2c0b269a -> 14de73dc5d57eecac3059ac018e2a0f7
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.ImageTracking_Targets: 92170d91a5c71e69eea6e5e7880af1e9 -> b21619985854d02ed0be63411b33671b
-  custom:scripting/monoscript/fileName/ARStarterAssetsSampleProjectValidation.cs: 15dadc062bce5d38a35cd5bd1e8534a7 -> e28542681ba71048490bf70566380520
-  custom:scripting/monoscript/fileName/SampleOneShotRendererFeature.cs: 4ab62eedbc7b44b1cd0fc9656efb6f5d -> 6b5cfa8088f6acbbffe19ceff96fc438
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.MotionTracking: 704358544c3300b727f6abb8edd2761c -> b8367ab8d9d0e8ff30fe33cc9dbe60b8
-  custom:scripting/monoscript/fileName/MapDockController.cs: 9d13ce511faff9e296f03e9334ffc140 -> a80ba9d790508547c1e22a29d93d8826
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.SpatialMap_Sparse_Building: 57a7ad805d9e4bdeccfe4348a9399b0c -> 943740197feb6dcc4b638c753fff58d8
-  custom:scripting/monoscript/fileName/ARFeatheredPlaneMeshVisualizer.cs: 3c87902f1657f5cdb8a36598a53a51da -> 1d68111d9ae6c99f7d40f76bcc05e266
-  custom:scripting/monoscript/fileName/MaterialPipelineHandler.cs: 17b10bb61ef95b41b1b7afa44cc412cd -> f4651671838c54c5496cc0e954bc8351
-  custom:scripting/monoscript/fileName/PropCollection.cs: 86063e454bb22e9ea1fea5924e248c43 -> 4e006bc6484c221acddb430959c206a0
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.MotionTracking_Fusion: b9d871ac02f6f8902034a2f485ea89a3 -> 630a71ec26bc0d08b42b2d3212920681
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget: 9972ee0d59c49627944a978713b05e83 -> a55e8cf5206b516da2f8e84bf1876de5
-  custom:scripting/monoscript/fileName/CloudRecognizerSample.cs: 87813a0ad2df3f40b5558f2c9a55367d -> c4baa70b3dffc5a952f56fb6cd171eab
-  custom:scripting/monoscript/fileName/ClimbTeleportDestinationIndicator.cs: 793210ed49c891c352ece72b9e53d90e -> 235141168ed1691dbdc32ea17f8778af
-  custom:scripting/monoscript/fileName/DynamicMoveProvider.cs: 29128bc89f27b0e7466c03a4d8c85514 -> 64ab64daf2a926326dc8263ed59a5ef2
-========================================================================
-Received Prepare
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_Fusion' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_Fusion/Scripts/EasyAR.Sense.Sample.MotionTracking_Fusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_Fusion' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_Fusion/Scripts/EasyAR.Sense.Sample.MotionTracking_Fusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_ImageTarget' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.MotionTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_ImageTarget' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.MotionTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiTracker' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiTracker' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_CloudRecognition' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_CloudRecognition/Scripts/EasyAR.Sense.Sample.ImageTracking_CloudRecognition.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_CloudRecognition' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_CloudRecognition/Scripts/EasyAR.Sense.Sample.ImageTracking_CloudRecognition.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Building' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Building' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.AllSamplesLauncher' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/AllSamplesLauncher/Scripts/EasyAR.Sense.Sample.AllSamplesLauncher.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.AllSamplesLauncher' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/AllSamplesLauncher/Scripts/EasyAR.Sense.Sample.AllSamplesLauncher.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_TargetOnTheFly/Scripts/EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_TargetOnTheFly/Scripts/EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.FrameRecording' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/FrameRecording/Scripts/EasyAR.Sense.Sample.FrameRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.FrameRecording' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/FrameRecording/Scripts/EasyAR.Sense.Sample.FrameRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking/Scripts/EasyAR.Sense.Sample.SurfaceTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking/Scripts/EasyAR.Sense.Sample.SurfaceTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Coloring3D' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Coloring3D/Scripts/EasyAR.Sense.Sample.ImageTracking_Coloring3D.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Coloring3D' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Coloring3D/Scripts/EasyAR.Sense.Sample.ImageTracking_Coloring3D.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_CustomCamera' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_CustomCamera/Scripts/EasyAR.Sense.Sample.Camera_CustomCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_CustomCamera' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_CustomCamera/Scripts/EasyAR.Sense.Sample.Camera_CustomCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SameImage' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SameImage/Scripts/EasyAR.Sense.Sample.MultiTarget_SameImage.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SameImage' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SameImage/Scripts/EasyAR.Sense.Sample.MultiTarget_SameImage.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ObjectTracking' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ObjectTracking/Scripts/EasyAR.Sense.Sample.ObjectTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ObjectTracking' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ObjectTracking/Scripts/EasyAR.Sense.Sample.ObjectTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_SparseSpatialMap/Scripts/EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_SparseSpatialMap/Scripts/EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_MotionFusion' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_MotionFusion/Scripts/EasyAR.Sense.Sample.ImageTracking_MotionFusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_MotionFusion' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_MotionFusion/Scripts/EasyAR.Sense.Sample.ImageTracking_MotionFusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Video' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Video/Scripts/EasyAR.Sense.Sample.ImageTracking_Video.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Video' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Video/Scripts/EasyAR.Sense.Sample.ImageTracking_Video.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiType' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiType/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiType.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiType' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiType/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiType.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_VideoCamera' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_VideoCamera/Scripts/EasyAR.Sense.Sample.Camera_VideoCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_VideoCamera' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_VideoCamera/Scripts/EasyAR.Sense.Sample.Camera_VideoCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Dense_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Dense_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.VideoRecording' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/VideoRecording/Scripts/EasyAR.Sense.Sample.VideoRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.VideoRecording' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/VideoRecording/Scripts/EasyAR.Sense.Sample.VideoRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking_ImageTarget' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.SurfaceTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking_ImageTarget' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.SurfaceTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_ImageTarget/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_ImageTarget/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking/Scripts/EasyAR.Sense.Sample.MotionTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking/Scripts/EasyAR.Sense.Sample.MotionTracking.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Targets' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Targets/Scripts/EasyAR.Sense.Sample.ImageTracking_Targets.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Targets' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Targets/Scripts/EasyAR.Sense.Sample.ImageTracking_Targets.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SingleTracker' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SingleTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_SingleTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SingleTracker' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SingleTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_SingleTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Dense_BallGame' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Dense_BallGame/Scripts/EasyAR.Sense.Sample.SpatialMap_Dense_BallGame.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Dense_BallGame' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Dense_BallGame/Scripts/EasyAR.Sense.Sample.SpatialMap_Dense_BallGame.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Localizing/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Localizing/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing.asmdef)
-Caller must complete domain reload
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_Fusion' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_Fusion/Scripts/EasyAR.Sense.Sample.MotionTracking_Fusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_Fusion' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_Fusion/Scripts/EasyAR.Sense.Sample.MotionTracking_Fusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_ImageTarget' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.MotionTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_ImageTarget' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.MotionTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiTracker' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiTracker' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_CloudRecognition' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_CloudRecognition/Scripts/EasyAR.Sense.Sample.ImageTracking_CloudRecognition.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_CloudRecognition' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_CloudRecognition/Scripts/EasyAR.Sense.Sample.ImageTracking_CloudRecognition.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Building' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Building' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.AllSamplesLauncher' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/AllSamplesLauncher/Scripts/EasyAR.Sense.Sample.AllSamplesLauncher.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.AllSamplesLauncher' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/AllSamplesLauncher/Scripts/EasyAR.Sense.Sample.AllSamplesLauncher.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_TargetOnTheFly/Scripts/EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_TargetOnTheFly/Scripts/EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.FrameRecording' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/FrameRecording/Scripts/EasyAR.Sense.Sample.FrameRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.FrameRecording' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/FrameRecording/Scripts/EasyAR.Sense.Sample.FrameRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking/Scripts/EasyAR.Sense.Sample.SurfaceTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking/Scripts/EasyAR.Sense.Sample.SurfaceTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Coloring3D' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Coloring3D/Scripts/EasyAR.Sense.Sample.ImageTracking_Coloring3D.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Coloring3D' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Coloring3D/Scripts/EasyAR.Sense.Sample.ImageTracking_Coloring3D.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_CustomCamera' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_CustomCamera/Scripts/EasyAR.Sense.Sample.Camera_CustomCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_CustomCamera' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_CustomCamera/Scripts/EasyAR.Sense.Sample.Camera_CustomCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SameImage' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SameImage/Scripts/EasyAR.Sense.Sample.MultiTarget_SameImage.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SameImage' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SameImage/Scripts/EasyAR.Sense.Sample.MultiTarget_SameImage.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ObjectTracking' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ObjectTracking/Scripts/EasyAR.Sense.Sample.ObjectTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ObjectTracking' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ObjectTracking/Scripts/EasyAR.Sense.Sample.ObjectTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_SparseSpatialMap/Scripts/EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_SparseSpatialMap/Scripts/EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_MotionFusion' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_MotionFusion/Scripts/EasyAR.Sense.Sample.ImageTracking_MotionFusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_MotionFusion' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_MotionFusion/Scripts/EasyAR.Sense.Sample.ImageTracking_MotionFusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Video' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Video/Scripts/EasyAR.Sense.Sample.ImageTracking_Video.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Video' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Video/Scripts/EasyAR.Sense.Sample.ImageTracking_Video.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiType' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiType/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiType.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiType' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiType/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiType.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_VideoCamera' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_VideoCamera/Scripts/EasyAR.Sense.Sample.Camera_VideoCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_VideoCamera' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_VideoCamera/Scripts/EasyAR.Sense.Sample.Camera_VideoCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Dense_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Dense_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.VideoRecording' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/VideoRecording/Scripts/EasyAR.Sense.Sample.VideoRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.VideoRecording' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/VideoRecording/Scripts/EasyAR.Sense.Sample.VideoRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking_ImageTarget' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.SurfaceTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking_ImageTarget' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.SurfaceTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_ImageTarget/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_ImageTarget/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking/Scripts/EasyAR.Sense.Sample.MotionTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking/Scripts/EasyAR.Sense.Sample.MotionTracking.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Targets' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Targets/Scripts/EasyAR.Sense.Sample.ImageTracking_Targets.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Targets' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Targets/Scripts/EasyAR.Sense.Sample.ImageTracking_Targets.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SingleTracker' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SingleTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_SingleTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SingleTracker' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SingleTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_SingleTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Dense_BallGame' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Dense_BallGame/Scripts/EasyAR.Sense.Sample.SpatialMap_Dense_BallGame.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Dense_BallGame' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Dense_BallGame/Scripts/EasyAR.Sense.Sample.SpatialMap_Dense_BallGame.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Localizing/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Localizing/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing.asmdef)
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.229 seconds
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_Fusion' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_Fusion/Scripts/EasyAR.Sense.Sample.MotionTracking_Fusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_Fusion' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_Fusion/Scripts/EasyAR.Sense.Sample.MotionTracking_Fusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_ImageTarget' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.MotionTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking_ImageTarget' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.MotionTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiTracker' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiTracker' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_CloudRecognition' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_CloudRecognition/Scripts/EasyAR.Sense.Sample.ImageTracking_CloudRecognition.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_CloudRecognition' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_CloudRecognition/Scripts/EasyAR.Sense.Sample.ImageTracking_CloudRecognition.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Building' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Building' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.AllSamplesLauncher' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/AllSamplesLauncher/Scripts/EasyAR.Sense.Sample.AllSamplesLauncher.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.AllSamplesLauncher' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/AllSamplesLauncher/Scripts/EasyAR.Sense.Sample.AllSamplesLauncher.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_TargetOnTheFly/Scripts/EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_TargetOnTheFly/Scripts/EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.FrameRecording' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/FrameRecording/Scripts/EasyAR.Sense.Sample.FrameRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.FrameRecording' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/FrameRecording/Scripts/EasyAR.Sense.Sample.FrameRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking/Scripts/EasyAR.Sense.Sample.SurfaceTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking/Scripts/EasyAR.Sense.Sample.SurfaceTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Coloring3D' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Coloring3D/Scripts/EasyAR.Sense.Sample.ImageTracking_Coloring3D.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Coloring3D' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Coloring3D/Scripts/EasyAR.Sense.Sample.ImageTracking_Coloring3D.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_CustomCamera' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_CustomCamera/Scripts/EasyAR.Sense.Sample.Camera_CustomCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_CustomCamera' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_CustomCamera/Scripts/EasyAR.Sense.Sample.Camera_CustomCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SameImage' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SameImage/Scripts/EasyAR.Sense.Sample.MultiTarget_SameImage.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SameImage' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SameImage/Scripts/EasyAR.Sense.Sample.MultiTarget_SameImage.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ObjectTracking' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ObjectTracking/Scripts/EasyAR.Sense.Sample.ObjectTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ObjectTracking' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ObjectTracking/Scripts/EasyAR.Sense.Sample.ObjectTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_SparseSpatialMap/Scripts/EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_SparseSpatialMap/Scripts/EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_MotionFusion' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_MotionFusion/Scripts/EasyAR.Sense.Sample.ImageTracking_MotionFusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_MotionFusion' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_MotionFusion/Scripts/EasyAR.Sense.Sample.ImageTracking_MotionFusion.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Video' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Video/Scripts/EasyAR.Sense.Sample.ImageTracking_Video.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Video' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Video/Scripts/EasyAR.Sense.Sample.ImageTracking_Video.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiType' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiType/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiType.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_MultiType' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_MultiType/Scripts/EasyAR.Sense.Sample.MultiTarget_MultiType.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_VideoCamera' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_VideoCamera/Scripts/EasyAR.Sense.Sample.Camera_VideoCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.Camera_VideoCamera' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/Camera_VideoCamera/Scripts/EasyAR.Sense.Sample.Camera_VideoCamera.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Dense_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Dense_Building/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.VideoRecording' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/VideoRecording/Scripts/EasyAR.Sense.Sample.VideoRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.VideoRecording' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/DeviceSupport/VideoRecording/Scripts/EasyAR.Sense.Sample.VideoRecording.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking_ImageTarget' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.SurfaceTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SurfaceTracking_ImageTarget' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking_ImageTarget/Scripts/EasyAR.Sense.Sample.SurfaceTracking_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_ImageTarget/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_ImageTarget/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking/Scripts/EasyAR.Sense.Sample.MotionTracking.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MotionTracking' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/MotionTracking/Scripts/EasyAR.Sense.Sample.MotionTracking.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Targets' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Targets/Scripts/EasyAR.Sense.Sample.ImageTracking_Targets.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.ImageTracking_Targets' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Targets/Scripts/EasyAR.Sense.Sample.ImageTracking_Targets.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SingleTracker' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SingleTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_SingleTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.MultiTarget_SingleTracker' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/MultiTarget_SingleTracker/Scripts/EasyAR.Sense.Sample.MultiTarget_SingleTracker.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Dense_BallGame' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Dense_BallGame/Scripts/EasyAR.Sense.Sample.SpatialMap_Dense_BallGame.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Dense_BallGame' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Dense_BallGame/Scripts/EasyAR.Sense.Sample.SpatialMap_Dense_BallGame.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor' already exists (Assets/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.asmdef)
-Assembly with name 'Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor' already exists (Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing' already exists (Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Localizing/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing.asmdef)
-Assembly with name 'EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing' already exists (Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SpatialMap_Sparse_Localizing/Scripts/EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing.asmdef)
-System.NullReferenceException: Object reference not set to an instance of an object
-  at UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.RenderPipelineValidation..cctor () [0x0000d] in D:\Software\Unity\FinalProject\GraduationDesign\Assets\UnityARsamples\Samples\XR Interaction Toolkit\3.0.4\Starter Assets\Scripts\MaterialPipelineHandler.cs:16 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Error decompressing TAR: 
-7-Zip (z) 24.09 (x64) : Copyright (c) 1999-2024 Igor Pavlov : 2024-11-29
-
-Scanning the drive for archives:
-
-ERROR: The system cannot find the file specified.
-Temp\TarGZ\archtemp.tar
-
-
-
-System ERROR:
-The system cannot find the file specified.
-
-Details: path='Temp/TarGZ/archtemp.tar' shortpath='àšŸÀ,' out='Temp/TarGZ'
-Failed to import package with error: Couldn't decompress package
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.AssetDatabase:ImportPackage (string,bool)
-easyar.FileUtil:ImportSampleStreamingAssets () (at C:/Users/27385/Downloads/EasyARSenseUnityPlugin_4.6.5+3052.b2f1b028/com.easyar.sense-4.6.5+3052.b2f1b028/package/Runtime/Utility/FileUtil.cs:169)
-SurfaceTracking_ImageTarget.UIController:ImportSampleStreamingAssets () (at Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/WorldSensing/SurfaceTracking_ImageTarget/Scripts/UIController.cs:33)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-[C:/Users/27385/Downloads/EasyARSenseUnityPlugin_4.6.5+3052.b2f1b028/com.easyar.sense-4.6.5+3052.b2f1b028/package/Runtime/Utility/FileUtil.cs line 169]
-
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  4.891 seconds
-Domain Reload Profiling: 6083ms
-	BeginReloadAssembly (308ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (51ms)
-	RebuildCommonClasses (49ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (71ms)
-	LoadAllAssembliesAndSetupDomain (749ms)
-		LoadAssemblies (847ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (80ms)
-			TypeCache.Refresh (16ms)
-				TypeCache.ScanAssembly (3ms)
-			ScanForSourceGeneratedMonoScriptInfo (45ms)
-			ResolveRequiredComponents (19ms)
-	FinalizeReload (4891ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2381ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (38ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (261ms)
-			ProcessInitializeOnLoadAttributes (400ms)
-			ProcessInitializeOnLoadMethodAttributes (1642ms)
-			AfterProcessingInitializeOnLoad (36ms)
+			BeforeProcessingInitializeOnLoad (89ms)
+			ProcessInitializeOnLoadAttributes (392ms)
+			ProcessInitializeOnLoadMethodAttributes (657ms)
+			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (19ms)
-Refreshing native plugins compatible for Editor in 40.70 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 5.49 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6433 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 36 unused Assets / (2.7 MB). Loaded Objects now: 7096.
-Memory consumption went from 223.5 MB to 220.8 MB.
-Total: 6.707000 ms (FindLiveObjects: 0.588400 ms CreateObjectMapping: 0.279100 ms MarkObjects: 4.196600 ms  DeleteObjects: 1.641800 ms)
+Unloading 6630 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 41 unused Assets / (1.8 MB). Loaded Objects now: 7087.
+Memory consumption went from 252.6 MB to 250.8 MB.
+Total: 4.616900 ms (FindLiveObjects: 0.424300 ms CreateObjectMapping: 0.400200 ms MarkObjects: 3.080200 ms  DeleteObjects: 0.711600 ms)
 
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
-  custom:scripting/monoscript/fileName/ARInteractorSpawnTrigger.cs: d1094fe06313f6bd24d1913718162fe8 -> 061f08b18d9b256e73a8a9e5cf9f6f30
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.SpatialMap_Sparse_Dense_Building: 1402a7fc77ba2f0cfd7df91363708214 -> afa010ab0df941be36ad29524b184e3a
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.ImageTracking_CloudRecognition: dadfa9b2bbe34a25c74faa8a5a94c76b -> 7e75347906b6ca081c75b10cff810824
-  custom:scripting/monoscript/fileName/MapGridController.cs: 65424536cee44909223117ecf836fb62 -> 5ef3cdb92b00fe70eacb07b4dafa1078
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.MultiTarget_SingleTracker: ac9256bf8f81147859f4bc6f5c6c576a -> 0db8ea8471f1c3028b8fa27868b29aed
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:scripting/monoscript/fileName/MultiAnchorTeleportReticle.cs: 4f128c8a453f724d64f8b2a36e0cf239 -> 2cd50d24a95a2957a547f1971842c723
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.SpatialMap_Dense_BallGame: 33f08dea4fb83790832c6ee6616ace0f -> d92247541e4b08734729c760e04608f0
-  custom:scripting/monoscript/fileName/MapSession.cs: 850f0c0574d924e40c29793cf9d7ed47 -> 77d7cf32ab126dd7b383c87cbcb9c77a
-  custom:scripting/monoscript/fileName/GoalManager.cs: 03da32e908aa3e27259c43ed8de259b9 -> 7735e2faec4b0bd26a07d04b73496118
-  custom:scripting/monoscript/fileName/CustomCameraSource.cs: 7474abc153bf8e507c2a63562c5b2b30 -> 99b35441016cd2c3cc4090a8c9e63026
-  custom:scripting/monoscript/fileName/ViewManager.cs: dd108cab7f207287fec095915ced8e52 -> efa7d9cc81bd4b48163a92445cdccb00
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.MultiTarget_MultiTracker: fea1b1c437d5e03a1d1a3057397e561d -> fb7dd8538e8ed30a5ce12074575d5337
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.ImageTracking_TargetOnTheFly: 7a80635215eb5c27095bbdbdeee508b6 -> 1b1b49a73f47ad1531d210cc429c4c4c
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.MotionTracking_ImageTarget: ad7185cc29d4a0dc43bea82dba9d17b9 -> 089447cd205fe0851379aac48717711d
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.VideoRecording: e3938cf5fb7e02ffb0260ddab43b073b -> 1cca6933799fd21e022011d39b1cc012
-  custom:scripting/monoscript/fileName/ARTemplateMenuManager.cs: ad415d9e933490781a672ab45d2d6068 -> e9c124bfc2788ca0fc8364a60081056d
-  custom:scripting/monoscript/fileName/CutoutMaskUI.cs: 1691ae5a04123b766d074d11bc96ef0f -> 50f014e9a5c0f2717fc019535c11d0c1
-  custom:scripting/monoscript/fileName/ARFoundationFrameSource.cs: ce7b1640650b9393d30f38e0f7af8d73 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:scripting/monoscript/fileName/MainScene.cs: 5c0447fd81bf896e9ae22f636e09adcd -> 3ce86a18bd8ad2d9e32fe762dc4a915a
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:scripting/monoscript/fileName/StarterAssetsSampleProjectValidation.cs: f5be5cbed9404299362a43a813697030 -> 41923d4e3ad340b10762e754770f8031
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:scripting/monoscript/fileName/Dragger.cs: a8c75c6f4e9d4a69e99f4bb9b5ed5c81 -> 82cdd85227e3ef331962176d012815ec
-  custom:scripting/monoscript/fileName/RotationAxisLockGrabTransformer.cs: 5129dc284a7446125707dc2c133174b9 -> e29b029f1c67e78124c804e28e38fc11
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:scripting/monoscript/fileName/TouchController.cs: 9e1bfefbe826f1802a1bdfb498cd0860 -> fc940d66630efe447ca7b1222d784008
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.Camera_CustomCamera: d8473756a3969f045527e4ed9cd82a06 -> f3b403cf17ad5f94bac5d58aed4efb6a
-  custom:scripting/monoscript/fileName/SceneTemplate_RotateCube.cs: 2156e1bc8ce9f90c71f7b341aa0c014c -> 965266725d3ae5c2660f423c8f51694c
-  custom:scripting/monoscript/fileName/MapBuilding_Sparse_DenseSample.cs: 188b0a141e204c61375a6cc14779ba68 -> b05f7ea9d1d9a9160ef2aeb75574ea53
-  custom:scripting/monoscript/fileName/DestroySelf.cs: cc2ccc0cad01a399dac0b387c75d593e -> 4403ad9e1588a465a19ece24fa8e9b79
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.ImageTracking_Coloring3D: 4671c4b5bdce7bf5b5c55de31dab63bd -> 9425760a5d5d1d6e82037507df695de4
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/ObjectSpawner.cs: a0115cad25fdcab2a50f1737a4f7a2e6 -> 9dd8da7c17a93d30bb31c5c6f3c19a83
-  custom:scripting/monoscript/fileName/CameraRecorder.cs: 45736cf3f54cceabab8eddb144d84a93 -> 70868399faa6a93d9bde3fe4e2513caa
-  custom:scripting/monoscript/fileName/MapLocalizing_SparseSample.cs: 408337be4e44239f2a8a10bd07ff419d -> f4b6a0459404f51f61f782be95a3f663
-  custom:scripting/monoscript/fileName/CreateViewController.cs: 4b9686bfe361b01c176afef282d68884 -> 2652dcdc6d1a804e77cc7bec4506393d
-  custom:scripting/precompiled-assembly-types:Unity.XR.Interaction.Toolkit.Samples.StarterAssets: d151c3c718600e8600405e89f4f08483 -> 49cd41c371b9955e2f45e639797f7a92
-  custom:scripting/precompiled-assembly-types:Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets: ab1bfc38de6e1404b7e44ecc1be728fe -> d8cfdfaeb241ca6f892c1fd32574d94f
-  custom:scripting/monoscript/fileName/PropCellController.cs: 74065217dc7e7bc3da51515ca162d39f -> 0afe7254b43f550963830a6634e738aa
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/ObjectTrackingSample.cs: 694371aac7e7d8a7761795a0d96c8a63 -> 9cc2af1997b40c37ac9b2781438ecfbd
-  custom:scripting/monoscript/fileName/ControllerInputActionManager.cs: 03b39c2043aa8447f4a16a31602ff781 -> 22ee03fd8ae67859d3530e7bd1d64c40
-  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 3bc6d319f32b0702a843c185bda31921 -> b0121aa87206961d39ee35937b27b1a1
-  custom:scripting/precompiled-assembly-types:Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor: dfb249410f2442c0b801e6a58086de6b -> d5a0480ae0872006eb5e91fd694521ea
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Ext.ARFoundation: ef98572f287b7c724e826103ee6a7931 -> 
-  custom:scripting/monoscript/fileName/EasyARARCoreARKitWrapperSample.cs: a4be9c9a3df98a81712d5074e9388da5 -> 220e1f0c3b46810ad3b58461b5f628a9
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.Camera_VideoCamera: 3b2f2f24b3e87102cce2e7ae6eb1a25e -> 9db893220b95f7a128f6a4842aff41a1
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.ImageTracking_Video: 983932a90dd8c00eb7cbdec2c08b230c -> c7c792cf665cf3d8956f3e9a7020f4bd
-  custom:scripting/monoscript/fileName/GazeInputManager.cs: 67f937649a15c9a733fb7836673b73e7 -> 155625cd07bc4e1e834f6e8f7d58bb43
-  custom:scripting/monoscript/fileName/ARSampleMenuManager.cs: 41d0d8f226aab61d56cf3adcc1308d31 -> fbb7e840cb648a4eec5fda75c1c1bcbc
-  custom:scripting/monoscript/fileName/ImageUtil.cs: 060c77fc03a8033c74f08c9a42414d1a -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:scripting/monoscript/fileName/ControllerAnimator.cs: c7f2ed3cd3cc5ec4aea95c805bcf5042 -> b14edcd8661779a23eec55dd7c421ab8
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.ImageTracking_MotionFusion: 58190bb4d82fbf8a92b59b15fa5078d4 -> 19959dcac4844bbd412e4016cf0c4992
-  custom:scripting/monoscript/fileName/RecordingSample.cs: 841af28049c7fd84683dd5eb33939483 -> d769e242c499408ade7c8edb543d8dbc
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:scripting/monoscript/fileName/SceneRecorder.cs: 871a98ee355cb41eefbd9985f89c3850 -> f9823a01f33fc748ade8424d9ec9cd0b
-  custom:scripting/monoscript/fileName/MapCellController.cs: 0dd6fd3108885efc06c23bbd24c32755 -> 52040ff7b81738354c5dd6bec1901ad8
-  custom:scripting/monoscript/fileName/MenuItems.cs: fc8b74e882d6d24da983cdcfbe1f9942 -> e11b8f410e4b90d8bc31151511b7d77d
-  custom:scripting/monoscript/fileName/TeleportVolumeAnchorAffordanceStateLink.cs: 34f4b6182a7e352e3e3cf5d19e1ae819 -> a1056e833fcba5322134a03c0f07a7e1
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Ext.ARFoundation.Editor: 71905ef479e0efcafd36365629ae2206 -> 
-  custom:scripting/monoscript/fileName/ImageTrackingSample.cs: 0d86546fb73e35c78ddd79c2e5fdbb3d -> fcaf2654f8097b0f11f01c7d0874a59c
-  custom:scripting/monoscript/fileName/VideoPlayerAgent.cs: 4a84af5ea41c0d43e80c48c81bfda0f7 -> 82b63d6ff27f2746758f86f64f2537a8
-  custom:scripting/monoscript/fileName/UIController.cs: e545f2cabdac5ac8f0cd614150e200ba -> b01872d6ec9c7090bdbae2fda967fae2
-  custom:scripting/monoscript/fileName/OneShot.cs: 724cca339c27ec73befd13c12196d849 -> 35dc9a0e73e9b1ab4d355ef717217d8c
   custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.FrameRecording: 5ee2fa8bf266a7fa55f541aa66f2c4ec -> ed78ef66b492b1d76895d8296de1270f
-  custom:scripting/monoscript/fileName/Sample.cs: 17f3303dcb398bb5aa50d216fef48f52 -> 8846456d8e334848695238b7d041f3f3
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.MultiTarget_SameImage: d7b396e254dbeb5c0b54e315a081d6fc -> 79ffef81bc79391d2be2658cd3e5cd34
-  custom:scripting/monoscript/fileName/XRPokeFollowAffordance.cs: cd2f8b7601fef2e629a2382f9c5b79a5 -> 621a47fc1058589b07b340fb03547357
-  custom:scripting/monoscript/fileName/ARFoundationFrameSourceEditor.cs: fecbd82b4f6b05b7df76e3b8a578280a -> 
-  custom:scripting/monoscript/fileName/MainViewController.cs: 53c61f3662fee155b75efeb5e3a3ad6f -> 781b8458f714c73e5b55660fce2c960d
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/ARFeatheredPlaneMeshVisualizerCompanion.cs: 714ef20837827a2dec9a8c99b5c159c3 -> e0b1d7fae8920c73874b85905072296f
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.SurfaceTracking_ImageTarget: 06a7f381f072e86a132fbc23a3076728 -> 7a565da2ac87ea1047b1c3458492902b
-  custom:scripting/monoscript/fileName/MultiTargetSameImageSample.cs: 228c4e817f46e14c883c390b845db693 -> e549cf12dab963dd6e1913f601b83246
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.SurfaceTracking: 1f53c90b3418031471638714ac17a4c7 -> d80a4a775a3b9c8bdc5c65aaa06841aa
-  custom:scripting/monoscript/fileName/Coloring3D.cs: 0349d5838e9c918aabf5893af1cc5e6e -> 3efea14cdfeb98f6e02ee84292bfef27
-  custom:scripting/monoscript/fileName/PropGridController.cs: ecb3559132c0983954cae5b5aa31a566 -> 8804bd64a11c008fdfee49356b72e0d3
-  custom:scripting/monoscript/fileName/TargetOnTheFlySample.cs: 156850c8dc14c44fbaf797e1c0dd0fe6 -> 1e94da2d79d1fda69102591bbae648b5
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.AllSamplesLauncher: 7fc3aa14f98b1fbdf9e5bab7f70f459c -> 41f08bfd010c84c02fcdcb83e893934e
-  custom:scripting/monoscript/fileName/EditViewController.cs: b05b53697b1bbb4245e1f52bb44142b4 -> 8813a5bdef158ac4ae81572a72f31bd0
-  custom:scripting/monoscript/fileName/MapBuilding_SparseSample.cs: 80670529161f4d49f2d009019278b9ab -> e4b835d74854b64a1c3726f766ceb0b9
-  custom:scripting/monoscript/fileName/ARContactSpawnTrigger.cs: 764073f596d455780267d874017aef5c -> 7e1304e93ee3ab3ff0292eb1ad0b27b3
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.SpatialMap_Sparse_Localizing: 41c2ced4ecf1e3f74c7aa79a5382ad89 -> e7e2d99391ade24ed700f72a2cc68921
-  custom:scripting/monoscript/fileName/SparseSpatailMapSample.cs: cb250b66a51fc7b2d806c028b45d594b -> 53227ef19285e270c07ef6615166aaff
-  custom:scripting/monoscript/fileName/EasyARAREngineInteropSample.cs: ff6dec9a913db7ad7299a581d3dce350 -> 2ef13f53679ade01bdc636d719221c48
-  custom:scripting/monoscript/fileName/MapMetaManager.cs: 13d0bf5fa461a19a38be848d7b7f018e -> 41ccfd1215019d536db1b12178c5b65c
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.ObjectTracking: effcce2911e0dc27ea0521f8545a02e5 -> 7cac1763035074042a337b56accc3fe6
-  custom:scripting/monoscript/fileName/MapMeta.cs: a2fb7ae6f24345d2d4ad56cb4378433b -> 1f167d7661b34e3710477f297d595d8f
-  custom:scripting/monoscript/fileName/MotionTrackingSample.cs: a7edf595477a91621da3d1d6ccee0443 -> 793251821d5acdae161db077a86900e1
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.MultiTarget_MultiType: c12e73c9d3fa0869a5b16939151da0d8 -> f815b46ba2b33b0483ac0a2a2d76429b
-  custom:scripting/precompiled-assembly-types:Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor: 84510a5fb9726023681a3569326ca78b -> ac93a809c4c32485b88edb1b417cdac1
-  custom:scripting/monoscript/fileName/IncrementUIText.cs: c0a952d102317224ae615d46a68bb518 -> f7d8385b142d66834e0ec965e04f971f
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.SpatialMap_SparseSpatialMap: ef6fe71f82b6c919a60340461e813cda -> af7a3220737d0d953d0ec3c910cab405
-  custom:scripting/monoscript/fileName/ImageTargetVideoSample.cs: e03878170913da99f6a9c87087d77d75 -> 5b3d69915ccea78a205e38d265a1b232
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:scripting/monoscript/fileName/VideoCameraSample.cs: 08dbee2ee235d431c0859ade2c0b269a -> 14de73dc5d57eecac3059ac018e2a0f7
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.ImageTracking_Targets: 92170d91a5c71e69eea6e5e7880af1e9 -> b21619985854d02ed0be63411b33671b
-  custom:scripting/monoscript/fileName/ARStarterAssetsSampleProjectValidation.cs: 15dadc062bce5d38a35cd5bd1e8534a7 -> e28542681ba71048490bf70566380520
-  custom:scripting/monoscript/fileName/SampleOneShotRendererFeature.cs: 4ab62eedbc7b44b1cd0fc9656efb6f5d -> 6b5cfa8088f6acbbffe19ceff96fc438
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.MotionTracking: 704358544c3300b727f6abb8edd2761c -> b8367ab8d9d0e8ff30fe33cc9dbe60b8
-  custom:scripting/monoscript/fileName/MapDockController.cs: 9d13ce511faff9e296f03e9334ffc140 -> a80ba9d790508547c1e22a29d93d8826
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.SpatialMap_Sparse_Building: 57a7ad805d9e4bdeccfe4348a9399b0c -> 943740197feb6dcc4b638c753fff58d8
-  custom:scripting/monoscript/fileName/ARFeatheredPlaneMeshVisualizer.cs: 3c87902f1657f5cdb8a36598a53a51da -> 1d68111d9ae6c99f7d40f76bcc05e266
-  custom:scripting/monoscript/fileName/MaterialPipelineHandler.cs: 17b10bb61ef95b41b1b7afa44cc412cd -> f4651671838c54c5496cc0e954bc8351
-  custom:scripting/monoscript/fileName/PropCollection.cs: 86063e454bb22e9ea1fea5924e248c43 -> 4e006bc6484c221acddb430959c206a0
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.MotionTracking_Fusion: b9d871ac02f6f8902034a2f485ea89a3 -> 630a71ec26bc0d08b42b2d3212920681
-  custom:scripting/precompiled-assembly-types:EasyAR.Sense.Sample.SpatialMap_Sparse_ImageTarget: 9972ee0d59c49627944a978713b05e83 -> a55e8cf5206b516da2f8e84bf1876de5
-  custom:scripting/monoscript/fileName/CloudRecognizerSample.cs: 87813a0ad2df3f40b5558f2c9a55367d -> c4baa70b3dffc5a952f56fb6cd171eab
-  custom:scripting/monoscript/fileName/ClimbTeleportDestinationIndicator.cs: 793210ed49c891c352ece72b9e53d90e -> 235141168ed1691dbdc32ea17f8778af
-  custom:scripting/monoscript/fileName/DynamicMoveProvider.cs: 29128bc89f27b0e7466c03a4d8c85514 -> 64ab64daf2a926326dc8263ed59a5ef2
-========================================================================
-Received Import Request.
-  Time since last request: 9192.513858 seconds.
-  path: Assets/UnityARsamples/TextMesh Pro/Fonts/LiberationSans.ttf
-  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityARsamples/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'a1cb554e27c5b4ec97902d3842a2ab31') in 0.372203 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 23

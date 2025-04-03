@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.easyar.sense": {
-      "version": "file:C:/Users/27385/Downloads/EasyARSenseUnityPlugin_4.6.5+3052.b2f1b028/com.easyar.sense-4.6.5+3052.b2f1b028/package",
+      "version": "file:../com.easyar.sense-4.6.5+3052.b2f1b028/package",
       "depth": 0,
       "source": "local",
       "dependencies": {
@@ -9,7 +9,7 @@
       }
     },
     "com.easyar.sense.ext.arfoundation": {
-      "version": "file:C:/Users/27385/Downloads/EasyARSenseUnityPlugin_4.6.5+3052.b2f1b028/com.easyar.sense.ext.arfoundation-4.6.5+3052.b2f1b028/package",
+      "version": "file:../com.easyar.sense.ext.arfoundation-4.6.5+3052.b2f1b028/package",
       "depth": 0,
       "source": "local",
       "dependencies": {

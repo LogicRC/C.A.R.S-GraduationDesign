@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 3433287}
   - component: {fileID: 3433286}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: ButtonExit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -260, y: -790}
+  m_AnchoredPosition: {x: -258, y: -790}
   m_SizeDelta: {x: 480, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3433286
@@ -493,12 +493,12 @@ GameObject:
   - component: {fileID: 255526348}
   - component: {fileID: 255526347}
   m_Layer: 5
-  m_Name: Button (Legacy) (2)
+  m_Name: Button delete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &255526346
 RectTransform:
   m_ObjectHideFlags: 0
@@ -817,6 +817,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 424236316}
   m_CullTransparentMesh: 1
+--- !u!1 &547148593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 547148594}
+  m_Layer: 0
+  m_Name: ScenceMaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &547148594
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547148593}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 427.32623, y: -18.77121, z: -29.209446}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &762279978
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,7 +940,7 @@ GameObject:
   - component: {fileID: 816691050}
   - component: {fileID: 816691049}
   m_Layer: 5
-  m_Name: InputField (Legacy)
+  m_Name: 'InputField '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1055,7 +1086,7 @@ GameObject:
   - component: {fileID: 886882222}
   - component: {fileID: 886882221}
   m_Layer: 5
-  m_Name: Button (Legacy) (5)
+  m_Name: Button road
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1176,7 +1207,7 @@ GameObject:
   - component: {fileID: 1141039072}
   - component: {fileID: 1141039071}
   m_Layer: 5
-  m_Name: Button (Legacy) (4)
+  m_Name: Button key points
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1494,7 +1525,7 @@ GameObject:
   - component: {fileID: 1446692699}
   - component: {fileID: 1446692698}
   m_Layer: 5
-  m_Name: Button (Legacy) (2)
+  m_Name: Button build map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1615,7 +1646,7 @@ GameObject:
   - component: {fileID: 1462125184}
   - component: {fileID: 1462125183}
   m_Layer: 5
-  m_Name: Button (Legacy) (1)
+  m_Name: Button navition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1684,7 +1715,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1462125184}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 547148593}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1462125184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2065,3 +2108,4 @@ SceneRoots:
   - {fileID: 1284103738}
   - {fileID: 2015715268}
   - {fileID: 1847684821}
+  - {fileID: 547148594}

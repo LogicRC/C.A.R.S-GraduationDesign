@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EasyAR.Sense.Ext.ARFoundation</name>
+    </assembly>
+    <members>
+        <member name="T:easyar.ARFoundationFrameSource">
+            <summary>
+            <para xml:lang="en">A custom frame source which connects AR Foundation output to EasyAR input in the scene, providing AR Foundation support using custom camera feature of EasyAR Sense.</para>
+            <para xml:lang="en">This frame source is one type of motion tracking device, and will output motion data in a <see cref="T:easyar.ARSession"/>.</para>
+            <para xml:lang="en">``AR Foundation`` is required to use this frame source, you need to setup AR Foundation according to official documents.</para>
+            <para xml:lang="en">This frame source will use ``ARFoundation.ARSession.CheckAvailability`` to check availability. <see cref="P:easyar.FrameSource.Camera"/> and <see cref="P:easyar.ARFoundationFrameSource.OriginCandidate"/> are also required for availability check, they will be automatically picked from scene objects if not setup. To choose frame source in runtime, you can deactive AR Foundation GameObjects and set all required values of all frame sources for availability check, and active AR Foundation GameObjects when this frame source is chosen.</para>
+            <para xml:lang="zh">在场景中将AR Foundation 的输出连接到EasyAR输入的自定义frame source。通过EasyAR Sense的自定义相机功能提供AR Foundation支持。</para>
+            <para xml:lang="zh">这个frame source是一种运动跟踪设备，在<see cref="T:easyar.ARSession"/>中会输出运动数据。</para>
+            <para xml:lang="zh">为了使用这个frame source， ``AR Foundation`` 是必需的。你需要根据官方文档配置AR Foundation。</para>
+            <para xml:lang="zh">这个frame source会使用 ``ARFoundation.ARSession.CheckAvailability`` 来检查可用性。在可用性检查中，<see cref="P:easyar.FrameSource.Camera"/> 和<see cref="P:easyar.ARFoundationFrameSource.OriginCandidate"/> 也是需要的，如果没有事先设置，会自动从场景物体中选择。如果要在运行时选择 frame source，可以deactive AR Foundation使用的所有GameObject，并设置所有frame source可用性检查所需要的数值，然后在这个frame source被选择后active AR Foundation 的GameObject。</para>
+            </summary>
+        </member>
+        <member name="F:easyar.ARFoundationFrameSource.EnableColorInput">
+            <summary>
+            <para xml:lang="en">If color image is used as frame input. Color image is usefull when recording a colored eif file, but not necessary for all EasyAR algorithms.</para>
+            <para xml:lang="zh">是否使用彩色图像作为frame输入。彩色图像在需要录制彩色eif文件的时候可以使用。所有EasyAR算法都不需要使用彩色图像。</para>
+            </summary>
+        </member>
+        <member name="F:easyar.ARFoundationFrameSource.AttemptUpdate">
+            <summary>
+            <para xml:lang="en">If the device supports AR Foundation but does not have the necessary software, some platforms allow prompting the user to install or update the software. If this field is true, a software update will be attempted. If the appropriate software is not installed or out of date, and this field is false, then this frame source will not be available.</para>
+            <para xml:lang="zh">如果设备支持AR Foundation但没有必要的软件，一些平台允许提示用户安装或更新软件。如果变量值为true，会尝试软件更新。如果系统中没有安装软件或软件过期，且变量值为false，这个frame source将是不可用的。</para>
+            </summary>
+        </member>
+        <member name="F:easyar.ARFoundationFrameSource.OptimizeConfigurationForTracking">
+            <summary>
+            <para xml:lang="en">Optimize ARCameraManager.currentConfiguration if it does not meet basic requirement for some of EasyAR features like Mega. Turn it off if you want full control of configuration choosing.</para>
+            <para xml:lang="zh">在ARCameraManager.currentConfiguration 不满足部分EasyAR功能（比如Mega）的基础需求时进行优化。如果你需要完全控制配置，你需要关掉这个选项。</para>
+            </summary>
+        </member>
+        <member name="P:easyar.ARFoundationFrameSource.OriginCandidate">
+            <summary>
+            <para xml:lang="en">The object Camera move against, will be automatically get from the scene.</para>
+            <para xml:lang="zh">相机运动的相对物体，如果没设置，将会自动从场景中获取。</para>
+            </summary>
+        </member>
+    </members>
+</doc>
