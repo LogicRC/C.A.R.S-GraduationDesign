@@ -330,6 +330,8 @@
 -r:"D:/Software/Unity/Eidition/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll"
 -r:"Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/EasyAR.Sense.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1300b0aE.dag/EasyAR.Sense.Ext.ARFoundation.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1300b0aE.dag/EasyAR.Sense.Ext.ARFoundation.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/EasyAR.Sense.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/EasyAR.Sense.Sample.AllSamplesLauncher.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/EasyAR.Sense.Sample.Camera_CustomCamera.ref.dll"
@@ -429,11 +431,11 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
 -analyzer:"D:/Software/Unity/Eidition/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/Software/Unity/Eidition/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/MobileARTemplateAssets/Scripts/ARFeatheredPlaneMeshVisualizerCompanion.cs"
-"Assets/MobileARTemplateAssets/Scripts/ARTemplateMenuManager.cs"
-"Assets/MobileARTemplateAssets/Scripts/GoalManager.cs"
-"Assets/MobileARTemplateAssets/UI/Scripts/CutoutMaskUI.cs"
-"Assets/Settings/Project Configuration/SceneTemplate_RotateCube.cs"
+"Assets/UnityARsamples/MobileARTemplateAssets/Scripts/ARFeatheredPlaneMeshVisualizerCompanion.cs"
+"Assets/UnityARsamples/MobileARTemplateAssets/Scripts/ARTemplateMenuManager.cs"
+"Assets/UnityARsamples/MobileARTemplateAssets/Scripts/GoalManager.cs"
+"Assets/UnityARsamples/MobileARTemplateAssets/UI/Scripts/CutoutMaskUI.cs"
+"Assets/UnityARsamples/Settings/Project Configuration/SceneTemplate_RotateCube.cs"
 -langversion:9.0
 /deterministic
 /optimize+

@@ -346,10 +346,10 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"D:/Software/Unity/Eidition/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/Software/Unity/Eidition/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/ARDemoSceneAssets/Scripts/ARSampleMenuManager.cs"
-"Assets/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Scripts/ARContactSpawnTrigger.cs"
-"Assets/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Scripts/ARFeatheredPlaneMeshVisualizer.cs"
-"Assets/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Scripts/ARInteractorSpawnTrigger.cs"
+"Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/ARDemoSceneAssets/Scripts/ARSampleMenuManager.cs"
+"Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Scripts/ARContactSpawnTrigger.cs"
+"Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Scripts/ARFeatheredPlaneMeshVisualizer.cs"
+"Assets/UnityARsamples/Samples/XR Interaction Toolkit/3.0.4/AR Starter Assets/Scripts/ARInteractorSpawnTrigger.cs"
 -langversion:9.0
 /deterministic
 /optimize+

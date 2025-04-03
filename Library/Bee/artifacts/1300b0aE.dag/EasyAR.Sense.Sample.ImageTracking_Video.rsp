@@ -340,8 +340,8 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"D:/Software/Unity/Eidition/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/Software/Unity/Eidition/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Video/Scripts/ImageTargetVideoSample.cs"
-"Assets/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Video/Scripts/VideoPlayerAgent.cs"
+"Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Video/Scripts/ImageTargetVideoSample.cs"
+"Assets/UnityARsamples/Samples/EasyAR Sense Unity Plugin/4.6.5+3052.b2f1b028/__All Handheld AR__/ObjectSensing/ImageTracking_Video/Scripts/VideoPlayerAgent.cs"
 -langversion:9.0
 /deterministic
 /optimize+
