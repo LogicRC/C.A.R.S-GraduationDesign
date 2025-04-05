@@ -13,6 +13,7 @@ TagManager:
   - UI
   - 
   - 
+  - PostProcessing
   - 
   - 
   - 
@@ -35,7 +36,6 @@ TagManager:
   - 
   - 
   - 
-  - XR Simulation
   - 
   m_SortingLayers:
   - name: Default

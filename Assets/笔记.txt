@@ -1,7 +1,0 @@
-Date:2025.3.31
-
-创建、保存、加载地图代码文件：
-\GraduationDesign\Assets\UnityARsamples\Samples\EasyAR Sense Unity Plugin\4.6.5+3052.b2f1b028\__All Handheld AR__\WorldSensing\SpatialMap_SparseSpatialMap\Scripts\MapSession.cs
-
-上传代码搜索标记：MapWorker.BuilderMapController.Host
-重点是Host方法实现上传，标记以便于以后研究如何把地图数据从官方服务器下载下来
