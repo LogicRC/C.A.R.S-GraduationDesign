@@ -1,9 +1,3 @@
-# EasyAR4.0 稀疏空间地图 室内导航
-
-[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
- 
- 使用软件：
-Unity2018.4、EasyAR4.0、NavMeshComponents
-
-运行效果
-https://www.bilibili.com/video/av91902354?p=1
+This is our graduation project —— Car Location Acquisition Augmented Reality System，a.k.a. C.A.R.S, 
+It is designed to provide intuitive AR navigation for car owners who get lost in underground garages. C. A.R.S mainly relies on camera recognition to provide AR navigation, without relying on GPS signals. This design takes into account that many underground garages have poor GPS signals.
+It must be poor, but we will strive to do our best. That's enough.

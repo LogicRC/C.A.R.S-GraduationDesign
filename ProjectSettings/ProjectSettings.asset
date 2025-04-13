@@ -164,7 +164,7 @@ PlayerSettings:
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 26
-  AndroidTargetSdkVersion: 26
+  AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
   aotOptions: 
   stripEngineCode: 1
@@ -640,7 +640,8 @@ PlayerSettings:
   webGLThreadsSupport: 0
   scriptingDefineSymbols: {}
   platformArchitecture: {}
-  scriptingBackend: {}
+  scriptingBackend:
+    Android: 0
   il2cppCompilerConfiguration: {}
   managedStrippingLevel: {}
   incrementalIl2cppBuild: {}
