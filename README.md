@@ -1,3 +1,3 @@
-This is our graduation project —— Car Location Acquisition Augmented Reality System，a.k.a. C.A.R.S, 
+This is our graduation project —— Car Location Acquisition Augmented Reality System, a.k.a. C.A.R.S, 
 It is designed to provide intuitive AR navigation for car owners who get lost in underground garages. C. A.R.S mainly relies on camera recognition to provide AR navigation, without relying on GPS signals. This design takes into account that many underground garages have poor GPS signals.
 It must be poor, but we will strive to do our best. That's enough.
