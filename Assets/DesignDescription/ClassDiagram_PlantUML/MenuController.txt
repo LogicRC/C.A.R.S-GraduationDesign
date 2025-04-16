@@ -1,0 +1,70 @@
+@startuml
+namespace Kuromu {
+  class MenuController {
+    - InputField inputField
+    - GameObject btnBuildMap
+    - GameObject btnDelete
+    - GameController gameController
+    + void Start()
+    + void BuildMap()
+    + void DeleteMap()
+    + void Exit()
+    - void SetBuildUI()
+  }
+
+  class GameController {
+    + string inputName
+  }
+}
+
+' 明确定义Unity命名空间
+namespace UnityEngine.SceneManagement {
+  class SceneManager {
+    + static void LoadScene(string)
+  }
+}
+
+namespace UnityEngine {
+  class Application {
+    + static void Quit()
+  }
+}
+
+namespace UnityEngine.UI {
+  class InputField {
+    + string text
+    + bool interactable
+  }
+  class GameObject {
+    + void SetActive(bool)
+  }
+}
+
+namespace UnityEngine {
+  class PlayerPrefs {
+    + static void DeleteKey(string)
+    + static string GetString(string)
+  }
+}
+
+' 修正依赖关系
+Kuromu.MenuController --> Kuromu.GameController : references
+Kuromu.MenuController --> UnityEngine.SceneManagement.SceneManager : calls
+Kuromu.MenuController --> UnityEngine.PlayerPrefs : uses
+Kuromu.MenuController --> UnityEngine.Application : calls
+Kuromu.MenuController --> UnityEngine.UI.InputField
+Kuromu.MenuController --> UnityEngine.UI.GameObject
+
+' 添加中文注释
+note top of UnityEngine.SceneManagement.SceneManager
+  Unity内置场景管理类
+  主要方法：LoadScene
+end note
+
+note right of Kuromu.MenuController::BuildMap
+  输入验证流程：
+  1. 检查输入框非空
+  2. 设置游戏控制器名称
+  3. 加载建造场景
+end note
+@enduml
