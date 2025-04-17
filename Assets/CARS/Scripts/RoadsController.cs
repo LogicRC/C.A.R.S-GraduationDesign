@@ -5,67 +5,68 @@ using UnityEngine.UI;
 
 namespace Kuromu
 {
-    //路径场景控制器
+    // Another trouble. This script is used for path scene controllers
     public class RoadsController : MonoBehaviour
     {
-        //游戏控制
+        // Same statement game controller
         private GameController gameController;
         /// <summary>
-        /// 出发点下拉列表
+        /// Declaration component, this is the starting point drop-down list
         /// </summary>
         private Dropdown dpdStart;
         /// <summary>
-        /// 到达点下拉列表
+        /// Declaration component, this is the dropdown list of arrival points
         /// </summary>
         private Dropdown dpdArrival;
         /// <summary>
-        /// 按钮
+        /// Declaration component, this is a button
         /// </summary>
         public SelectButton prefab;
         /// <summary>
-        /// 按钮容器
+        /// Declaration component, this is a button container
         /// </summary>
         private Transform svContent;
         /// <summary>
-        /// 显示信息
+        /// Declaration components, some information used for display
         /// </summary>
         private Text info;
         /// <summary>
-        /// 关键点列表
+        /// Declaration component, used to display a list of key points
         /// </summary>
         private List<KeyPoint> keyPoints;
         /// <summary>
-        /// 选中对象
+        /// Declaration component, used to display selected objects
         /// </summary>
         private Transform selected;
         /// <summary>
-        /// 删除按钮
+        /// Declare a delete button
         /// </summary>
         private Button btnDelete;
 
         void Start()
         {
-            //填充下拉列表
+            // In this section, first fill in the dropdown list
             gameController = FindObjectOfType<GameController>();
             dpdStart = GameObject.Find("/Canvas/Panel/dpdStart").GetComponent<Dropdown>();
             dpdArrival = GameObject.Find("/Canvas/Panel/dpdArrival").GetComponent<Dropdown>();
-            //添加按钮
+            // Call the button to add a path
             svContent = GameObject.Find("/Canvas/Panel/Scroll View/Viewport/Content").transform;
             info = GameObject.Find("/Canvas/Panel/Text").GetComponent<Text>();
             GameObject.Find("/Canvas/Panel/ButtonAdd").GetComponent<Button>().onClick.AddListener(AddRoad);
             keyPoints = new List<KeyPoint>();
-            //删除按钮
+            // Call the button to delete the path
             btnDelete = GameObject.Find("/Canvas/Panel/ButtonDelete").GetComponent<Button>();
             btnDelete.onClick.AddListener(DeleteRoad);
             btnDelete.interactable = false;
-            //保存按钮
+            // Call the button to save the path
             GameObject.Find("/Canvas/Panel/ButtonSave").GetComponent<Button>().onClick.AddListener(SaveRoads);
 
             BindDropdown();
             LoadRoad();
         }
         /// <summary>
-        /// 添加路径
+        /// This method is used to add a path
+        /// The two ends of the path are points, whether it is the destination point or the passing point
         /// </summary>
         private void LoadRoad()
         {
@@ -78,7 +79,7 @@ namespace Kuromu
             }
         }
         /// <summary>
-        /// 保存路径
+        /// Used to save the path
         /// </summary>
         private void SaveRoads()
         {
@@ -88,19 +89,19 @@ namespace Kuromu
                 jsons[i] = JsonUtility.ToJson(svContent.GetChild(i).GetComponent<SelectButton>().road);
             }
             gameController.SaveRoads(jsons);
-            info.text = "保存成功。";
+            info.text = "Successfully saved";
         }
         /// <summary>
-        /// 删除路径
+        /// Used to delete paths
         /// </summary>
         private void DeleteRoad()
         {
             Destroy(selected.gameObject);
-            info.text = "删除成功。";
+            info.text = "Delete successfully";
             btnDelete.interactable = false;
         }
         /// <summary>
-        /// 按钮点击
+        /// This section is used for button clicking
         /// </summary>
         /// <param name="btnTF"></param>
         public void SelectButtonClicked(Transform btnTF)
@@ -110,7 +111,7 @@ namespace Kuromu
             btnDelete.interactable = true;
         }
         /// <summary>
-        /// 添加路径
+        /// This is used to add paths
         /// </summary>
         private void AddRoad()
         {
@@ -123,13 +124,14 @@ namespace Kuromu
 
             btn.GetComponentInChildren<Text>().text = btn.road.startName + "<===>" + btn.road.arrivalName;
 
-            info.text = "添加成功。";
+            info.text = "Added successfully";
         }
         /// <summary>
-        /// 根据关键点名称获取坐标
+        /// The following section is used to obtain coordinates based on keypoint names
+        /// Technically speaking, it means generating a straight line between two coordinates
         /// </summary>
-        /// <param name="pName">名称</param>
-        /// <returns>坐标</returns>
+        /// <param name="pName">Key point name</param>
+        /// <returns>key point coordinate</returns>
         private Vector3 GetPositionByName(string pName)
         {
             foreach (var kp in keyPoints)
@@ -142,7 +144,7 @@ namespace Kuromu
             return Vector3.zero;
         }
         /// <summary>
-        /// 绑定下拉列表
+        /// Bind the corresponding dropdown list
         /// </summary>
         private void BindDropdown()
         {

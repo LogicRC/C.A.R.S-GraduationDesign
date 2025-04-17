@@ -1,0 +1,162 @@
+@startuml
+!pragma useVerticalIf on
+!pragma strict
+
+' 核心控制器层（顶部）
+namespace CARS {
+class NavigationController {
+  - GameController gameController
+  - GameObject panel
+  - Button btnNav
+  + SelectButton prefabButton
+  - Transform svContent
+  + Transform navRoot
+  + Transform prefabArrival
+  + Transform prefabRoad
+  - LineRenderer lineRenderer
+  - NavMeshAgent agent
+  - NavMeshPath path
+  - NavMeshSurface surface
+  - Transform arrival
+  + Transform player
+  
+  - ARSession session
+  - SparseSpatialMapWorkerFrameFilter mapWorker
+  - SparseSpatialMapController map
+
+  + void Start()
+  - void LoadMap()
+  - void ClearNav()
+  + void SelectButtonClicked(Transform)
+  - void DisplayPath()
+  - void BakePath()
+  - void SetLine()
+  - void LoadRoads()
+  - void LoadArrivals()
+  - void ShowNavUI()
+  - void CloseNavUI()
+}
+
+class SelectButton {
+  + KeyPoint keyPoint
+  + Transform arrival
+  + Text buttonText
+}
+
+class KeyPoint {
+  + Vector3 position
+  + Quaternion rotation
+  + string name
+  + int pointType
+}
+
+class Road {
+  + Vector3 startPosition
+  + Vector3 arrivalPosition
+}
+}
+
+' 垂直排列的技术组件层
+together {
+  package "UnityEngine" {
+    class GameObject {
+      + Transform transform
+      + void SetActive(bool)
+    }
+    class Transform {
+      + Vector3 position
+      + Vector3 localPosition
+    }
+    class LineRenderer {
+      + Material material
+      + int positionCount
+      + void SetPositions(Vector3[])
+      + float widthMultiplier
+      + Gradient colorGradient
+    }
+    class NavMeshAgent {
+      + bool enabled
+      + void CalculatePath(Vector3, NavMeshPath)
+    }
+    class NavMeshSurface {
+      + void BuildNavMesh()
+    }
+  }
+
+  package "UnityEngine.UI" {
+    class Button {
+      + UnityEvent onClick
+      + bool interactable
+    }
+    class Text {
+      + string text
+    }
+  }
+
+  package "easyar" {
+    class ARSession
+    class SparseSpatialMapWorkerFrameFilter {
+      + Localizer localizer
+    }
+    class SparseSpatialMapController {
+      + MapManagerSource MapManagerSource
+      + event Action<SparseSpatialMapController, bool, string> MapLoad
+      + event Action MapLocalized
+      + event Action MapStopLocalize
+    }
+  }
+}
+
+' 继承和依赖关系
+CARS.NavigationController --|> UnityEngine.MonoBehaviour
+CARS.NavigationController --> CARS.GameController : uses
+CARS.NavigationController --> CARS.SelectButton : creates
+CARS.NavigationController --> UnityEngine.LineRenderer : controls
+CARS.NavigationController --> UnityEngine.NavMeshAgent : manages
+
+' 事件监听关系
+CARS.NavigationController ..> easyar.SparseSpatialMapController : Listens to\nMapLoad
+CARS.NavigationController ..> easyar.SparseSpatialMapController : Listens to\nMapLocalized
+
+' 布局优化指令
+together {
+  CARS.NavigationController -[hidden]down- UnityEngine.GameObject
+  CARS.NavigationController -[hidden]down- UnityEngine.UI.Button
+  CARS.NavigationController -[hidden]down- easyar.SparseSpatialMapController
+}
+
+note top of CARS.NavigationController
+  <<AR Navigation Core Controller>>
+Main functions:
+1. AR map loading and positioning
+2. Navigation path calculation and display
+3. User interface interaction control
+4. Navigation element lifecycle management
+end note
+
+note right of CARS.NavigationController::LoadMap
+EasyAR map loading process:
+1. Configure map ID and name
+2. Registration loading status callback
+3. Start the localization process
+4. Automatically build navigation grid
+end note
+
+note left of CARS.NavigationController::DisplayPath
+Real time path update:
+1. Calculate the path based on the player's location
+2. Update Linerenderer vertex data
+3. Refresh every 0.5 seconds
+4. Use NavMesh path calculation
+end note
+
+skinparam package {
+  BackgroundColor #F5F5F5
+  BorderColor #DDDDDD
+  FontSize 13
+}
+skinparam classFontSize 12
+skinparam nodesep 40
+skinparam ranksep 60
+
+@enduml

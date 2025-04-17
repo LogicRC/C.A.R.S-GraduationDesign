@@ -1,0 +1,113 @@
+@startuml
+!pragma useVerticalIf on
+!pragma strict
+top to bottom direction
+
+' 核心控制器（顶部居中）
+namespace CARS {
+class NavigationController {
+  - GameController gameController
+  - GameObject panel
+  - Button btnNav
+  + SelectButton prefabButton
+  - Transform svContent
+  + Transform navRoot
+  + Transform prefabArrival
+  + Transform prefabRoad
+  - LineRenderer lineRenderer
+  - NavMeshAgent agent
+  - NavMeshPath path
+  - NavMeshSurface surface
+  - Transform arrival
+  + Transform player
+  
+  - ARSession session
+  - SparseSpatialMapWorkerFrameFilter mapWorker
+  - SparseSpatialMapController map
+
+  + void Start()
+  - void LoadMap()
+  - void ClearNav()
+  + void SelectButtonClicked(Transform)
+  - void DisplayPath()
+  - void BakePath()
+  - void SetLine()
+  - void LoadRoads()
+  - void LoadArrivals()
+  - void ShowNavUI()
+  - void CloseNavUI()
+}
+}
+
+' 垂直排列技术栈（核心控制器下方）
+package "UnityEngine Core" {
+  class GameObject
+  class Transform
+  class LineRenderer
+  class NavMeshAgent
+  class NavMeshSurface
+}
+
+package "UnityEngine UI" #DDDDFF {
+  class Button
+  class Text
+}
+
+package "EasyAR" #FFDDDD {
+  class ARSession
+  class SparseSpatialMapWorkerFrameFilter
+  class SparseSpatialMapController
+}
+
+' 数据结构层（最底部）
+package "Data Structures" #DDFFDD {
+  class SelectButton
+  class KeyPoint
+  class Road
+}
+
+' 继承关系
+CARS.NavigationController --|> MonoBehaviour
+
+' 核心依赖关系
+CARS.NavigationController --> "UnityEngine Core".GameObject
+CARS.NavigationController --> "UnityEngine Core".LineRenderer
+CARS.NavigationController --> "UnityEngine Core".NavMeshAgent
+CARS.NavigationController --> "UnityEngine UI".Button
+CARS.NavigationController --> "EasyAR".SparseSpatialMapController
+CARS.NavigationController --> "Data Structures".SelectButton
+
+' 布局优化（强制垂直流向）
+CARS.NavigationController -[hidden]down-> "UnityEngine Core"
+"UnityEngine Core" -[hidden]down-> "UnityEngine UI"
+"UnityEngine UI" -[hidden]down-> "EasyAR"
+"EasyAR" -[hidden]down-> "Data Structures"
+
+note right of CARS.NavigationController
+  <<AR Navigation Core>>
+  Key Features:
+  1. AR Map Localization
+  2. Path Calculation
+  3. Dynamic UI Control
+  4. NavMesh Baking
+end note
+
+skinparam package<<CARS>> {
+  BackgroundColor #FFFFFF
+  BorderColor #333333
+}
+skinparam package {
+  BackgroundColor #F5F5F5
+  BorderColor #666666
+  RoundCorner 15
+  FontSize 14
+}
+skinparam class {
+  BackgroundColor #FFFFFF
+  BorderColor #333333
+  ArrowColor #666666
+}
+skinparam nodesep 20
+skinparam ranksep 30
+
+@enduml

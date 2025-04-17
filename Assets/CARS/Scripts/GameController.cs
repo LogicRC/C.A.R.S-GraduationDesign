@@ -8,31 +8,33 @@ using System.IO;
 namespace Kuromu
 {
     /// <summary>
-    /// 游戏控制
+    /// This is a global control method, although it includes a game, it is not a game.
     /// </summary>
     public class GameController : MonoBehaviour
     {
         private static GameController instance = null;
         /// <summary>
-        /// 输入的地图名称
+        /// Declare variables to store the input map name.
         /// </summary>
         public string inputName;
         /// <summary>
-        /// 显示信息文本框
+        /// Declaration Display Information Text Box
         /// </summary>
         private Text txtShow;
         /// <summary>
-        /// 关键点存储路径
+        /// Used to reference Unity's UI text components in scripts
         /// </summary>
         private string pathKeyPoints;
         /// <summary>
-        /// 导航路径存储路径
+        /// Declare variables to store navigation paths and storage paths
         /// </summary>
         private string pathRoads;
 
         void Awake()
         {
-            //实现单实例
+            //1.Ensure globally unique instances and avoid duplicate object creation through singleton mode
+            //2.Cross scenario persistence: Retain critical data controllers.
+            //3.Set a reliable persistent path for file storage.
             if (instance == null)
             {
                 instance = this;
@@ -53,11 +55,11 @@ namespace Kuromu
             txtShow.gameObject.SetActive(false);
         }
 
-        #region 提示信息
+        #region Reminder Information
         /// <summary>
-        /// /// 显示信息
+        /// This method is used to display information
         /// </summary>
-        /// <param name="message">信息</param>
+        /// <param name="message">The information you want to display</param>
         public void ShowMessage(string message)
         {
             StopCoroutine("EndShowMessage");
@@ -66,7 +68,7 @@ namespace Kuromu
             StartCoroutine("EndShowMessage");
         }
         /// <summary>
-        /// 隐藏信息
+        /// This method is used to hide information after you don't want it to be displayed
         /// </summary>
         /// <returns></returns>
         private IEnumerator EndShowMessage()
@@ -78,44 +80,48 @@ namespace Kuromu
 
         #endregion
 
-        #region 读取关键点和路径
+        #region Read key points and paths
         /// <summary>
-        /// 保存关键点
+        /// The following method is used to save key points
+        /// This is when you scan the beacon (such as a pre-set QR code) when starting the keypoint scanning mode
+        /// Then you can save the location information of this beacon as a key point
         /// </summary>
-        /// <param name="jsons">json字符串数组</param>
+        /// <param name="jsons">json string array</param>
         public void SaveKeyPoints(string[] jsons)
         {
             SaveStringArray(jsons, pathKeyPoints);
         }
         /// <summary>
-        /// 加载关键点
+        /// The following method is used to load key points
         /// </summary>
-        /// <returns>关键点json列表</returns>
+        /// <returns>Load the json list of key points</returns>
         public List<string> LoadKeyPoins()
         {
             return LoadStringList(pathKeyPoints);
         }
         /// <summary>
-        /// 保存路径
+        /// The following method is used to save the path
+        /// The path connects key points to each other
+        /// When activating AR navigation mode, it will display according to the connected path
         /// </summary>
-        /// <param name="jsons">json字符串数组</param>
+        /// <param name="jsons">json string array</param>
         public void SaveRoads(string[] jsons)
         {
             SaveStringArray(jsons, pathRoads);
         }
         /// <summary>
-        /// 加载路径
+        /// The following method is used to load the path
         /// </summary>
-        /// <returns>路径json列表</returns>
+        /// <returns>Display path json list</returns>
         public List<string> LoadRoads()
         {
             return LoadStringList(pathRoads);
         }
         /// <summary>
-        /// 保存字符串数组
+        /// Save string array
         /// </summary>
-        /// <param name="stringArray">字符串数组</param>
-        /// <param name="path">保存路径</param>
+        /// <param name="stringArray">This variable is a saved string array</param>
+        /// <param name="path">This variable is the path where it was saved</param>
         private void SaveStringArray(string[] stringArray, string path)
         {
             try
@@ -134,10 +140,10 @@ namespace Kuromu
             }
         }
         /// <summary>
-        /// 读取文本信息
+        /// Read text information
         /// </summary>
-        /// <param name="path">文本路径</param>
-        /// <returns>字符串列表</returns>
+        /// <param name="path">This variable is a text path</param>
+        /// <returns>and then return a list of strings</returns>
         private List<string> LoadStringList(string path)
         {
             List<string> list = new List<string>();

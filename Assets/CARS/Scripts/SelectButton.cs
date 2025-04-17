@@ -4,20 +4,20 @@ using UnityEngine.UI;
 namespace Kuromu
 {
     /// <summary>
-    /// 滚动视图中的点击按钮
+    /// This script is used to define click buttons in a scrolling view
     /// </summary>
     public class SelectButton : MonoBehaviour
     {
         /// <summary>
-        /// 关键点
+        /// Declaration key points
         /// </summary>
         public KeyPoint keyPoint;
         /// <summary>
-        /// 路径
+        /// Declaration Path
         /// </summary>
         public Road road;
         /// <summary>
-        /// 目的地
+        /// Declaration of destination
         /// </summary>
         public Transform arrival;
 

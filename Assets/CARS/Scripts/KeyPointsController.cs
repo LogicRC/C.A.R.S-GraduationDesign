@@ -4,60 +4,67 @@ using easyar;
 
 namespace Kuromu
 {
-    //关键点场景控制
+    //This script is used to implement scene control of key points
     public class KeyPointsController : MonoBehaviour
     {
         /// <summary>
-        /// 关键点画布
+        /// Declaration Key Canvas
         /// </summary>
         private GameObject panel;
         /// <summary>
-        /// 信息文本框
+        /// Declaration Information Text Box
         /// </summary>
         private Text info;
         /// <summary>
-        /// 选中的对象
+        /// Declare the selected object
+        /// A Transform component used to reference a game object within a script.
+        /// By reasonable initialization (manual drag and drop or code retrieval), 
+        /// functions such as selecting objects and operating positions can be achieved
+        /// 
+        /// When starting keypoint scanning, 
+        /// the application will display a red square in AR form to prompt the user when it recognizes the previously set beacon (such as a QR code).
+        /// And when the user clicks on this beacon, the method of recording location will be activated.
         /// </summary>
         private Transform selected;
         /// <summary>
-        /// 滚动视图容器
+        /// Declaration of Rolling View Container
         /// </summary>
         private Transform svContent;
         /// <summary>
-        /// 名称输入
+        /// Call the input box to enter the name of the key point
         /// </summary>
         private InputField inputField;
         /// <summary>
-        /// 类型选择
+        /// Used for type selection, waypoints or destinations, waypoints cannot be set as navigation targets
         /// </summary>
         private Dropdown dropdown;
         /// <summary>
-        /// 关键点按钮预制件
+        /// Used to call key button preforms
         /// </summary>
         public SelectButton prefab;
         /// <summary>
-        /// 添加按钮
+        /// Just add button!
         /// </summary>
         private Button btnAdd;
         /// <summary>
-        /// 删除按钮
+        /// Just delete button
         /// </summary>
         private Button btnDelete;
         /// <summary>
-        /// 游戏控制
+        /// Declare calling game control components
         /// </summary>
         private GameController gameController;
         private ARSession session;
         private SparseSpatialMapWorkerFrameFilter mapWorker;
         private SparseSpatialMapController map;
         /// <summary>
-        /// 本地化状态
+        /// Used to check the localization status of sparse maps
         /// </summary>
         private bool localized = false;
 
         void Start()
         {
-            //界面控制
+            // The following code is used to initialize and implement interface control
             panel = GameObject.Find("/Canvas/Panel");
             panel.transform.Find("ButtonClose").GetComponent<Button>().onClick.AddListener(() =>
             {
@@ -88,42 +95,44 @@ namespace Kuromu
             LoadMap();
         }
         /// <summary>
-        /// 加载地图
+        /// The following code is used to load sparse maps, 
+        /// but the data is actually downloaded from EasyAR's server
         /// </summary>
         private void LoadMap()
         {
-            //设置地图
+            // Call the method in EasyAR plugin to set the map
+            // Retrieve specified map data based on MapID (actually EasyAR's map API) and map name
             map.MapManagerSource.ID = PlayerPrefs.GetString("MapID");
             map.MapManagerSource.Name = PlayerPrefs.GetString("MapName");
-            //地图获取反馈
+            // Set feedback for map acquisition
             map.MapLoad += (map, status, error) =>
             {
                 if (status)
                 {
                     localized = true;
-                    gameController.SendMessage("ShowMessage", "地图加载成功。");
+                    gameController.SendMessage("ShowMessage", "Map loaded successfully");
                 }
                 else
                 {
-                    gameController.SendMessage("ShowMessage", "地图加载失败。" + error);
+                    gameController.SendMessage("ShowMessage", "Map loading failed:" + error);
                 }
             };
-            //定位成功事件
+            // Set successful positioning event prompt
             map.MapLocalized += () =>
             {
-                gameController.SendMessage("ShowMessage", "进入稀疏空间定位。");
+                gameController.SendMessage("ShowMessage", "Successfully entered sparse space localization");
             };
-            //停止定位事件
+            // Set stop location event prompt
             map.MapStopLocalize += () =>
             {
-                gameController.SendMessage("ShowMessage", "停止稀疏空间定位");
+                gameController.SendMessage("ShowMessage", "Stop sparse space localization");
             };
-            gameController.SendMessage("ShowMessage", "开始加载地图。");
-            mapWorker.Localizer.startLocalization();    //本地化地图
+            gameController.SendMessage("ShowMessage", "Start loading the map");
+            mapWorker.Localizer.startLocalization();    // Call the method in EasyAR plugin to start localizing the map
         }
-        #region 关键点控制
+        #region This code is used to implement keypoint control
         /// <summary>
-        /// 加载关键点
+        /// Start loading key points
         /// </summary>
         private void LoadKeyPoints()
         {
@@ -136,7 +145,7 @@ namespace Kuromu
             }
         }
         /// <summary>
-        /// 保存关键点
+        /// Start saving key points
         /// </summary>
         private void SaveKeyPoints()
         {
@@ -146,19 +155,20 @@ namespace Kuromu
                 jsons[i] = JsonUtility.ToJson(svContent.GetChild(i).GetComponent<SelectButton>().keyPoint);
             }
             gameController.SaveKeyPoints(jsons);
-            info.text = "保存完成。";
+            info.text = "Save completed";
         }
         /// <summary>
-        /// 删除关键点
+        /// Delete key points
+
         /// </summary>
         private void DeleteKeyPoint()
         {
             Destroy(selected.gameObject);
-            info.text = "删除成功。";
+            info.text = "The deletion was successful";
             btnDelete.interactable = false;
         }
         /// <summary>
-        /// 按钮点击
+        /// Button click
         /// </summary>
         /// <param name="btnTF"></param>
         public void SelectButtonClicked(Transform btnTF)
@@ -169,7 +179,7 @@ namespace Kuromu
             btnAdd.interactable = false;
         }
         /// <summary>
-        /// 添加关键点
+        /// The following method is used to add key points
         /// </summary>
         private void AddKeyPoint()
         {
@@ -185,15 +195,17 @@ namespace Kuromu
 
                 inputField.text = "";
                 selected = null;
-                info.text = "添加成功。";
+                info.text = "Added successfully";
                 btnAdd.interactable = false;
             }
         }
         #endregion
 
-        #region 界面控制
+        #region This code is used to implement interface control
         /// <summary>
-        /// 隐藏画布
+        /// Hide Canvas
+        /// Because after clicking on the key beacon, a new canvas will appear
+        /// This includes buttons for editing key point names, etc
         /// </summary>
         private void HiddenPanel()
         {
@@ -201,7 +213,7 @@ namespace Kuromu
             info.text = "";
         }
         /// <summary>
-        /// 显示画布
+        /// Show Canvas
         /// </summary>
         private void ShowPanel()
         {
@@ -210,7 +222,7 @@ namespace Kuromu
         }
         #endregion
 
-        #region  点击物体
+        #region  The following code is used to implement 'when the user clicks on a key point'
         void Update()
         {
             if (Input.GetMouseButtonUp(0) && localized)
@@ -227,7 +239,7 @@ namespace Kuromu
             }
         }
         /// <summary>
-        /// 点中游戏对象
+        /// When the user clicks on a key point, start saving the location, etc
         /// </summary>
         private void HitObject()
         {

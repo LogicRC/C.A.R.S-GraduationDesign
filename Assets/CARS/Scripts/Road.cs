@@ -4,25 +4,25 @@ using System;
 namespace Kuromu
 {
     /// <summary>
-    /// 路径
+    /// This script is used to generate path related variables
     /// </summary>
     [Serializable]
     public class Road
     {
         /// <summary>
-        /// 起始坐标
+        /// Declare a variable to store the starting coordinates
         /// </summary>
         public Vector3 startPosition;
         /// <summary>
-        /// 到达坐标
+        /// Declare a variable to store the arrival coordinates
         /// </summary>
         public Vector3 arrivalPosition;
         /// <summary>
-        /// 起始位置名称
+        /// Declare a variable to store the starting position name
         /// </summary>
         public string startName;
         /// <summary>
-        /// 到达位置名称
+        /// Declare a variable to store the name of the destination location
         /// </summary>
         public string arrivalName;
     }

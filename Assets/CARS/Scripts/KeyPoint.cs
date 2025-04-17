@@ -4,25 +4,28 @@ using System;
 namespace Kuromu
 {
     /// <summary>
-    /// 关键点
+    /// The following method is used to save key point's data
+    /// This is when you scan the beacon (such as a pre-set QR code) when starting the keypoint scanning mode
+    /// Then you can save the location information of this beacon as a key point
+    /// All methods provided in EasyAR
     /// </summary>
     [Serializable]
     public class KeyPoint
     {
         /// <summary>
-        /// 位置
+        /// Declare location information
         /// </summary>
         public Vector3 position;
         /// <summary>
-        /// 角度
+        /// Declare angle information
         /// </summary>
         public Quaternion rotation;
         /// <summary>
-        /// 名称
+        /// Declaration of Key Point Names
         /// </summary>
         public string name;
         /// <summary>
-        /// 类型：0=目的地；1=途经点
+        /// Setting type: 0=destination; 1=Passing point
         /// </summary>
         public int pointType;
     }

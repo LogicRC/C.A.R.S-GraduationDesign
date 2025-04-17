@@ -6,61 +6,61 @@ using easyar;
 namespace Kuromu
 {
     /// <summary>
-    /// 导航场景控制器
+    /// This script is used to control AR navigation scenes
     /// </summary>
     public class NavigationController : MonoBehaviour
     {
         /// <summary>
-        /// 游戏控制
+        /// Declare game control, it's just called this, temporarily
         /// </summary>
         private GameController gameController;
         /// <summary>
-        /// 导航画布
+        /// Declare the navigation canvas in the scene
         /// </summary>
         private GameObject panel;
         /// <summary>
-        /// 导航按钮
+        /// Declare navigation buttons in the scene
         /// </summary>
         private Button btnNav;
         /// <summary>
-        /// 导航按钮
+        /// Declare navigation buttons in the scene
         /// </summary>
         public SelectButton prefabButton;
         /// <summary>
-        /// 导航按钮容器
+        /// Declare the navigation button container in the scene
         /// </summary>
         private Transform svContent;
         /// <summary>
-        /// 导航根节点
+        /// Declare the navigation root node in the scene
         /// </summary>
         public Transform navRoot;
         /// <summary>
-        /// 目的地预制件
+        /// Declaration of destination prefabricated parts in the scenario
         /// </summary>
         public Transform prefabArrival;
         /// <summary>
-        /// 路径预制件
+        /// Declare path prefabricated components in the scene
         /// </summary>
         public Transform prefabRoad;
         /// <summary>
-        /// 导航线
+        /// Declare the navigation lines in the scene
         /// </summary>
         private LineRenderer lineRenderer;
         /// <summary>
-        /// 导航代理
+        /// Declare the navigation agent in the scene
         /// </summary>
         private NavMeshAgent agent;
         /// <summary>
-        /// 导航路径
+        /// Declare the navigation path in the scene
         /// </summary>
         private NavMeshPath path;
         private NavMeshSurface surface;
         /// <summary>
-        /// 导航目标
+        /// Declare the navigation target in the scene
         /// </summary>
         private Transform arrival;
         /// <summary>
-        /// 玩家
+        /// Declare the user's location to achieve navigation effects that follow the user's movements
         /// </summary>
         public Transform player;
 
@@ -88,29 +88,29 @@ namespace Kuromu
         }
 
         /// <summary>
-        /// 加载地图
+        /// Oh, of course, the first step is to set up the map part
         /// </summary>
         private void LoadMap()
         {
-            //设置地图
+            //Set map name and ID
             map.MapManagerSource.ID = PlayerPrefs.GetString("MapID");
             map.MapManagerSource.Name = PlayerPrefs.GetString("MapName");
-            //地图加载反馈
+            //Set feedback on map loading, success or failure
             map.MapLoad += (map, status, error) =>
             {
                 if (status)
                 {
-                    gameController.SendMessage("ShowMessage", "地图加载成功。");
+                    gameController.SendMessage("ShowMessage", "Map loaded successfully");
                 }
                 else
                 {
-                    gameController.SendMessage("ShowMessage", "地图加载失败。" + error);
+                    gameController.SendMessage("ShowMessage", "Map loading failed:" + error);
                 }
             };
-            //地图定位反馈
+            // Set successful positioning event prompt
             map.MapLocalized += () =>
             {
-                gameController.SendMessage("ShowMessage", "进入稀疏空间定位。");
+                gameController.SendMessage("ShowMessage", "Successfully entered sparse space localization");
                 ClearNav();
                 LoadArrivals();
                 LoadRoads();
@@ -118,37 +118,39 @@ namespace Kuromu
                 btnNav.interactable = true;
                 ShowNavUI();
             };
-            //停止定位反馈
+            // Set stop location event prompt
             map.MapStopLocalize += () =>
             {
-                gameController.SendMessage("ShowMessage", "停止稀疏空间定位");
+                gameController.SendMessage("ShowMessage", "Stop sparse space localization");
             };
-            gameController.SendMessage("ShowMessage", "开始加载地图。");
-            mapWorker.Localizer.startLocalization();    //本地化地图
+            gameController.SendMessage("ShowMessage", "Start loading the map");
+            mapWorker.Localizer.startLocalization();    // Call the method in EasyAR plugin to start localizing the map
         }
         /// <summary>
-        /// 清理导航元素
+        /// Clean up navigation elements
+        /// Otherwise, catastrophic multiple navigation overlays may occur
+        /// Of course we need to delete it, right?
         /// </summary>
         private void ClearNav()
         {
-            //删除按钮
+            // delete Button
             foreach (Transform tf in svContent)
             {
                 Destroy(tf.gameObject);
             }
-            //删除目的地
+            // Delete destination
             foreach (Transform tf in navRoot.Find("Arrivals"))
             {
                 Destroy(tf.gameObject);
             }
-            //删除路径
+            // delete path
             foreach (Transform tf in navRoot.Find("Roads"))
             {
                 Destroy(tf.gameObject);
             }
         }
         /// <summary>
-        /// 按钮点击
+        /// This method is used to implement button clicking
         /// </summary>
         /// <param name="btnTF"></param>
         public void SelectButtonClicked(Transform btnTF)
@@ -167,7 +169,9 @@ namespace Kuromu
             CloseNavUI();
         }
         /// <summary>
-        /// 显示路径
+        /// This method is used to display the path
+        /// That is, the guiding lines that users see in navigation mode
+        /// Although it's simple, it's important
         /// </summary>
         private void DisplayPath()
         {
@@ -179,7 +183,7 @@ namespace Kuromu
             agent.enabled = false;
         }
         /// <summary>
-        /// 烘培路径
+        /// Call the method baking path in NavMeshAgent
         /// </summary>
         private void BakePath()
         {
@@ -192,7 +196,8 @@ namespace Kuromu
         }
 
         /// <summary>
-        /// 设置导航线样式
+        /// We can set the navigation line style
+        /// But anyway, let's start with this
         /// </summary>
         private void SetLine()
         {
@@ -212,7 +217,9 @@ namespace Kuromu
             lineRenderer.colorGradient = gradient;
         }
         /// <summary>
-        /// 加载路径
+        /// This method is used to load paths
+        /// The path needs to be additionally set in another menu
+        /// In fact, this only needs to be set up once on the management side, and there is no need for the user side to set it up
         /// </summary>
         private void LoadRoads()
         {
@@ -234,7 +241,8 @@ namespace Kuromu
             Destroy(temp.gameObject);
         }
         /// <summary>
-        /// 加载目标
+        /// This method is used to load the target
+        /// That is, the previously set keyPoint
         /// </summary>
         private void LoadArrivals()
         {
@@ -256,14 +264,14 @@ namespace Kuromu
             }
         }
         /// <summary>
-        /// 显示导航菜单
+        /// Used to display navigation menus, if successfully entering sparse space positioning
         /// </summary>
         private void ShowNavUI()
         {
             panel.SetActive(true);
         }
         /// <summary>
-        /// 关闭导航菜单
+        /// It needs to be closed as it has been opened
         /// </summary>
         private void CloseNavUI()
         {

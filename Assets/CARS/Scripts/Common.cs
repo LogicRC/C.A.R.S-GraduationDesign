@@ -4,14 +4,16 @@ using UnityEngine.SceneManagement;
 namespace Kuromu
 {
     /// <summary>
-    /// 公共功能
+    /// This script contains some common features, currently only...
+    /// Switching scenes
     /// </summary>
     public class Common : MonoBehaviour
     {
         /// <summary>
-        /// 加载场景
+        /// This method is used to load scenes
+        /// based on the scene name added during the call, its quite simple, isnt it
         /// </summary>
-        /// <param name="sceneName">场景名称</param>
+        /// <param name="sceneName">Enter the scene name when calling</param>
         public void LoadScene(string sceneName)
         {
             SceneManager.LoadScene(sceneName);

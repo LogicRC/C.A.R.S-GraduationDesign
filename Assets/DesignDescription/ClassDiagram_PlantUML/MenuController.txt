@@ -1,5 +1,5 @@
 @startuml
-namespace Kuromu {
+namespace CARS {
   class MenuController {
     - InputField inputField
     - GameObject btnBuildMap
@@ -17,7 +17,7 @@ namespace Kuromu {
   }
 }
 
-' 明确定义Unity命名空间
+
 namespace UnityEngine.SceneManagement {
   class SceneManager {
     + static void LoadScene(string)
@@ -47,24 +47,24 @@ namespace UnityEngine {
   }
 }
 
-' 修正依赖关系
-Kuromu.MenuController --> Kuromu.GameController : references
-Kuromu.MenuController --> UnityEngine.SceneManagement.SceneManager : calls
-Kuromu.MenuController --> UnityEngine.PlayerPrefs : uses
-Kuromu.MenuController --> UnityEngine.Application : calls
-Kuromu.MenuController --> UnityEngine.UI.InputField
-Kuromu.MenuController --> UnityEngine.UI.GameObject
 
-' 添加中文注释
+CARS.MenuController --> CARS.GameController : references
+CARS.MenuController --> UnityEngine.SceneManagement.SceneManager : calls
+CARS.MenuController --> UnityEngine.PlayerPrefs : uses
+CARS.MenuController --> UnityEngine.Application : calls
+CARS.MenuController --> UnityEngine.UI.InputField
+CARS.MenuController --> UnityEngine.UI.GameObject
+
+
 note top of UnityEngine.SceneManagement.SceneManager
-  Unity内置场景管理类
-  主要方法：LoadScene
+  load new scenes
+  Using Unity's built-in methods: LoadScene
 end note
 
-note right of Kuromu.MenuController::BuildMap
-  输入验证流程：
-  1. 检查输入框非空
-  2. 设置游戏控制器名称
-  3. 加载建造场景
+note right of CARS.MenuController::BuildMap
+  Initiate verification process:
+  1. Check if the input box is not empty
+  2. Set game controller name
+  3. Load construction scene
 end note
 @enduml

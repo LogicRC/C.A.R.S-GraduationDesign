@@ -1,0 +1,84 @@
+@startuml
+' 显式声明类图类型
+!pragma useVerticalIf on
+skinparam classFontSize 12
+skinparam classAttributeIconSize 0
+
+' 定义命名空间层级
+namespace CARS {
+  class BuildMapController {
+    - GameController gameController
+    - Button btnSave
+    - ARSession session
+    - SparseSpatialMapWorkerFrameFilter mapWorker
+    - SparseSpatialMapController map
+    + void Start()
+    - void Save()
+    - void OnTrackingStatusChanged(MotionTrackingStatus)
+  }
+
+  class GameController {
+    + string inputName
+    + void SendMessage(string, object)
+  }
+}
+
+' 明确easyar插件组件定义
+namespace easyar {
+  class ARSession {
+    + WorldRootController WorldRootController
+    + event Action<MotionTrackingStatus> TrackingStatusChanged
+  }
+
+  class SparseSpatialMapWorkerFrameFilter {
+    + BuilderMapController BuilderMapController
+  }
+
+  class SparseSpatialMapController {
+    ' 地图可视化控制方法
+  }
+
+  class BuilderMapController {
+    + void Host(string, string)
+    + event Action<MapInfo, bool, string> MapHost
+  }
+
+  class MapInfo {
+    + string ID
+    + string Name
+  }
+}
+
+' Unity标准组件定义
+namespace UnityEngine.UI {
+  class Button {
+    + bool interactable
+    + UnityEvent onClick
+  }
+}
+
+namespace UnityEngine {
+  class PlayerPrefs {
+    + static void SetString(string, string)
+  }
+}
+
+' 修正依赖关系箭头
+CARS.BuildMapController --> CARS.GameController : "1. references\n<&arrow-up>"
+CARS.BuildMapController --> easyar.ARSession : "2. manages\n<&plug>"
+CARS.BuildMapController --> easyar.SparseSpatialMapWorkerFrameFilter : "3. controls\n<&sliders>"
+CARS.BuildMapController --> UnityEngine.UI.Button : "4. interacts\n<&toggle-right>"
+
+' 事件监听关系使用虚线箭头
+CARS.BuildMapController ..> easyar.ARSession : "onTrackingStatusChanged\n<&bell>"
+easyar.BuilderMapController ..> CARS.BuildMapController : "mapHost callback\n<&loop>"
+
+' 添加组件图例
+legend right
+  Color Codes:
+  |<#LightBlue> CARS| Business Logic
+  |<#LightGreen> easyar| AR plugin layer
+  |<#LightGrey> UnityEngine| Engine Foundation Layer
+endlegend
+
+@enduml
