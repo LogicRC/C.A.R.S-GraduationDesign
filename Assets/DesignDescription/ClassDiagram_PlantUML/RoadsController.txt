@@ -1,0 +1,115 @@
+@startuml
+!pragma useVerticalIf on
+!pragma strict
+top to bottom direction
+
+' 核心控制器层（顶部）
+namespace CARS {
+class RoadsController {
+  - GameController gameController
+  - Dropdown dpdStart
+  - Dropdown dpdArrival
+  + SelectButton prefab
+  - Transform svContent
+  - Text info
+  - List<KeyPoint> keyPoints
+  - Transform selected
+  - Button btnDelete
+
+  + void Start()
+  - void LoadRoad()
+  - void SaveRoads()
+  - void DeleteRoad()
+  + void SelectButtonClicked(Transform)
+  - void AddRoad()
+  - Vector3 GetPositionByName(string)
+  - void BindDropdown()
+}
+
+class SelectButton {
+  + Road road
+  + Text buttonText
+}
+
+class Road {
+  + Vector3 startPosition
+  + Vector3 arrivalPosition
+  + string startName
+  + string arrivalName
+}
+
+class KeyPoint {
+  + Vector3 position
+  + string name
+}
+}
+
+' 垂直排列技术栈
+package "UnityEngine.UI" #DDDDFF {
+  class Dropdown {
+    + List<OptionData> options
+    + Text captionText
+  }
+  class Button {
+    + UnityEvent onClick
+    + bool interactable
+  }
+  class Text {
+    + string text
+  }
+}
+
+package "UnityEngine.Core" #F0F0F0 {
+  class Transform
+  class GameObject
+}
+
+' 数据流动关系
+CARS.RoadsController --> CARS.GameController : 1.Data access
+CARS.RoadsController --> CARS.SelectButton : 2.Create an instance
+CARS.RoadsController --> "UnityEngine.UI".Dropdown : 3. Manage dropdown menus
+CARS.RoadsController --> "UnityEngine.UI".Button : 4. Event binding
+
+CARS.SelectButton --> CARS.Road : 5. Associate path data
+CARS.Road --> CARS.KeyPoint : 6. Key points cited
+
+' 布局优化
+CARS.RoadsController -[hidden]down-> "UnityEngine.UI"
+"UnityEngine.UI" -[hidden]down-> "UnityEngine.Core"
+
+note right of CARS.RoadsController::BindDropdown
+Pull down menu binding process:
+1. Load all key points
+2. Fill in start/end options
+3. Set default selection options
+end note
+
+note left of CARS.RoadsController::AddRoad
+Path addition logic:
+1. Obtain the selected start and end point names
+2. Query the corresponding coordinates
+3. Create new path data
+4. Generate visualization button
+end note
+
+skinparam package<<CARS>> {
+  BackgroundColor #DDFFDD
+  BorderColor #009900
+  FontSize 14
+}
+
+skinparam package {
+  BackgroundColor #F5F5F5
+  BorderColor #666666
+  RoundCorner 15
+}
+
+skinparam class {
+  BackgroundColor #FFFFFF
+  BorderColor #333333
+  FontSize 12
+}
+
+skinparam nodesep 15
+skinparam ranksep 20
+@enduml

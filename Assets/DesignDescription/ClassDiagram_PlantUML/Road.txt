@@ -1,0 +1,70 @@
+@startuml
+!pragma useVerticalIf on
+!pragma strict
+top to bottom direction
+
+' 核心数据结构层（顶部居中）
+namespace CARS {
+
+class Road {
+  + Vector3 startPosition
+  + Vector3 arrivalPosition
+  + string startName
+  + string arrivalName
+}
+}
+
+' 垂直排列的Unity基础类型
+package "UnityEngine Core" #F5F5F5 {
+  class Vector3 {
+    + float x
+    + float y
+    + float z
+  }
+}
+
+' 关联关系
+CARS.Road --> "UnityEngine Core".Vector3 : contains >
+
+' 数据结构元数据说明
+note top of CARS.Road
+  <<Path Data Structure>>
+Path data specification:
+1. Store starting/ending point coordinates
+2. Include location name identification
+3. JSON serialization support
+4. Used for AR path visualization
+end note
+
+note right of CARS.Road::startPosition
+Space coordinate specification:
+-Using the Unity world coordinate system
+-Unit: Meter
+-Derived from KeyPoint data
+end note
+
+skinparam package<<CARS>> {
+  BackgroundColor #DDFFDD
+  BorderColor #009900
+  FontSize 14
+  RoundCorner 20
+}
+
+skinparam class {
+  BackgroundColor #FFFFFF
+  BorderColor #333333
+  ArrowColor #666666
+  FontSize 12
+}
+
+skinparam package {
+  BackgroundColor #F5F5F5
+  BorderColor #666666
+  RoundCorner 15
+  FontSize 13
+}
+
+skinparam nodesep 15
+skinparam ranksep 20
+
+@enduml

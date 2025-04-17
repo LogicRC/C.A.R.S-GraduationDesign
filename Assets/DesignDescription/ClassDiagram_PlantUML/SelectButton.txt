@@ -1,0 +1,79 @@
+@startuml
+!pragma useVerticalIf on
+!pragma strict
+top to bottom direction
+
+namespace CARS {
+  class SelectButton {
+    + KeyPoint keyPoint
+    + Road road
+    + Transform arrival
+    + void Start()
+  }
+}
+
+' 垂直排列的依赖组件
+package "UnityEngine.UI" #DDDDFF {
+  class Button {
+    + UnityEvent onClick
+  }
+}
+
+package "UnityEngine" #F0F0F0 {
+  class Transform {
+    + Vector3 position
+  }
+}
+
+package "Data Structures" #DDFFDD {
+  class KeyPoint {
+    + Vector3 position
+    + string name
+  }
+  
+  class Road {
+    + Vector3 startPosition
+    + Vector3 arrivalPosition
+  }
+}
+
+' 核心关联关系
+CARS.SelectButton --> "UnityEngine.UI".Button : extends >
+CARS.SelectButton --> "Data Structures".KeyPoint : contains
+CARS.SelectButton --> "Data Structures".Road : contains
+CARS.SelectButton --> "UnityEngine".Transform : references
+
+' 事件处理说明
+note left of CARS.SelectButton::Start
+Click on event handling:
+1. Dynamically search for SceneMaster objects
+2. Send a SelectButtons Clicked message
+3. Pass its own Transform parameters
+end note
+
+' 布局优化
+CARS.SelectButton -[hidden]down-> "UnityEngine.UI"
+"UnityEngine.UI" -[hidden]down-> "Data Structures"
+"Data Structures" -[hidden]down-> "UnityEngine"
+
+skinparam package<<CARS>> {
+  BackgroundColor #FFFFFF
+  BorderColor #333333
+  FontSize 14
+}
+
+skinparam package {
+  BackgroundColor #F5F5F5
+  BorderColor #666666
+  RoundCorner 15
+}
+
+skinparam class {
+  BackgroundColor #FFFFFF
+  BorderColor #333333
+  FontSize 12
+}
+
+skinparam nodesep 15
+skinparam ranksep 20
+@enduml
