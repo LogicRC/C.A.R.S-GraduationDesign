@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System;
 
-namespace Kuromu
+namespace CARS
 {
     /// <summary>
     /// The following method is used to save key point's data

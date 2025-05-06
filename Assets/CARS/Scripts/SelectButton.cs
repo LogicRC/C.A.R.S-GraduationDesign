@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace Kuromu
+namespace CARS
 {
     /// <summary>
     /// This script is used to define click buttons in a scrolling view

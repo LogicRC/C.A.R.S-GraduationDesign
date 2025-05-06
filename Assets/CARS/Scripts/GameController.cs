@@ -5,7 +5,7 @@ using System;
 using UnityEngine.UI;
 using System.IO;
 
-namespace Kuromu
+namespace CARS
 {
     /// <summary>
     /// This is a global control method, although it includes a game, it is not a game.

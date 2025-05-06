@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Kuromu.Pre
+namespace CARS.Pre
 {
     public class KeyPointsController : MonoBehaviour
     {

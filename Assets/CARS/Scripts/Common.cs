@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Kuromu
+namespace CARS
 {
     /// <summary>
     /// This script contains some common features, currently only...

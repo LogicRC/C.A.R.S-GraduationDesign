@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using easyar;
 using System;
 
-namespace Kuromu
+namespace CARS
 {
     /// <summary>
     /// This script is used to establish a map scene controller

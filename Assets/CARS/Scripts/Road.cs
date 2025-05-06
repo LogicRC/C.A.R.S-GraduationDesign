@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System;
 
-namespace Kuromu
+namespace CARS
 {
     /// <summary>
     /// This script is used to generate path related variables

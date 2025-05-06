@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.AI;
 
-namespace Kuromu
+namespace CARS
 {
     public class Navigation : MonoBehaviour
     {

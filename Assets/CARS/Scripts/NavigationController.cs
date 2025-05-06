@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.AI;
 using easyar;
 
-namespace Kuromu
+namespace CARS
 {
     /// <summary>
     /// This script is used to control AR navigation scenes

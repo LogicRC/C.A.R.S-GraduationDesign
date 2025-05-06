@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Kuromu
+namespace CARS
 {
     // Another trouble. This script is used for path scene controllers
     public class RoadsController : MonoBehaviour

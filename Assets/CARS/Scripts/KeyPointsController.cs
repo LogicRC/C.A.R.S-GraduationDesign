@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using easyar;
 
-namespace Kuromu
+namespace CARS
 {
     //This script is used to implement scene control of key points
     public class KeyPointsController : MonoBehaviour

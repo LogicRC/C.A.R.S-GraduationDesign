@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-namespace Kuromu
+namespace CARS
 {
     /// <summary>
     /// the following code is the scene controller for the main menu
