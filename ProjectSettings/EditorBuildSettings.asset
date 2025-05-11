@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/CARS/Scenes/LogIn.unity
+    guid: ead5a68f4eedf1243a10d6957b2dc8c0
+  - enabled: 1
+    path: Assets/CARS/Scenes/Register.unity
+    guid: cf2d44a3cea21e242bb55848aaea4c52
+  - enabled: 1
     path: Assets/CARS/Scenes/Menu.unity
     guid: ef56d3d642f521445bb83ab4422413c4
   - enabled: 1
