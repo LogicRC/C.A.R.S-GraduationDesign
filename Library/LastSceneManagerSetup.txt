@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/CARS/Scenes/LogIn.unity
+- path: Assets/CARS/Scenes/Menu.unity
   isLoaded: 1
   isActive: 1
