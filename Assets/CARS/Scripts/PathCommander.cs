@@ -6,18 +6,18 @@ using UnityEngine.UI;
 namespace CARS
 {
     // Another trouble. This script is used for path scene controllers
-    public class RoadsController : MonoBehaviour
+    public class PathCommander : MonoBehaviour
     {
         // Same statement game controller
-        private GameController gameController;
+        private EARcreatePath findObject;
         /// <summary>
         /// Declaration component, this is the starting point drop-down list
         /// </summary>
-        private Dropdown dpdStart;
+        private Dropdown loadJcombobox;
         /// <summary>
         /// Declaration component, this is the dropdown list of arrival points
         /// </summary>
-        private Dropdown dpdArrival;
+        private Dropdown endJcombobox;
         /// <summary>
         /// Declaration component, this is a button
         /// </summary>
@@ -25,7 +25,7 @@ namespace CARS
         /// <summary>
         /// Declaration component, this is a button container
         /// </summary>
-        private Transform svContent;
+        private Transform setPanel;
         /// <summary>
         /// Declaration components, some information used for display
         /// </summary>
@@ -33,7 +33,7 @@ namespace CARS
         /// <summary>
         /// Declaration component, used to display a list of key points
         /// </summary>
-        private List<KeyPoint> keyPoints;
+        private List<EARpointData> keyPoints;
         /// <summary>
         /// Declaration component, used to display selected objects
         /// </summary>
@@ -41,23 +41,23 @@ namespace CARS
         /// <summary>
         /// Declare a delete button
         /// </summary>
-        private Button btnDelete;
+        private Button deleteKeyPoint;
 
         void Start()
         {
             // In this section, first fill in the dropdown list
-            gameController = FindObjectOfType<GameController>();
-            dpdStart = GameObject.Find("/Canvas/Panel/dpdStart").GetComponent<Dropdown>();
-            dpdArrival = GameObject.Find("/Canvas/Panel/dpdArrival").GetComponent<Dropdown>();
+            findObject = FindObjectOfType<EARcreatePath>();
+            loadJcombobox = GameObject.Find("/Canvas/Panel/dpdStart").GetComponent<Dropdown>();
+            endJcombobox = GameObject.Find("/Canvas/Panel/dpdArrival").GetComponent<Dropdown>();
             // Call the button to add a path
-            svContent = GameObject.Find("/Canvas/Panel/Scroll View/Viewport/Content").transform;
+            setPanel = GameObject.Find("/Canvas/Panel/Scroll View/Viewport/Content").transform;
             info = GameObject.Find("/Canvas/Panel/Text").GetComponent<Text>();
-            GameObject.Find("/Canvas/Panel/ButtonAdd").GetComponent<Button>().onClick.AddListener(AddRoad);
-            keyPoints = new List<KeyPoint>();
+            GameObject.Find("/Canvas/Panel/ButtonAdd").GetComponent<Button>().onClick.AddListener(NewPath);
+            keyPoints = new List<EARpointData>();
             // Call the button to delete the path
-            btnDelete = GameObject.Find("/Canvas/Panel/ButtonDelete").GetComponent<Button>();
-            btnDelete.onClick.AddListener(DeleteRoad);
-            btnDelete.interactable = false;
+            deleteKeyPoint = GameObject.Find("/Canvas/Panel/ButtonDelete").GetComponent<Button>();
+            deleteKeyPoint.onClick.AddListener(DeleteRoad);
+            deleteKeyPoint.interactable = false;
             // Call the button to save the path
             GameObject.Find("/Canvas/Panel/ButtonSave").GetComponent<Button>().onClick.AddListener(SaveRoads);
 
@@ -70,12 +70,12 @@ namespace CARS
         /// </summary>
         private void LoadRoad()
         {
-            var list = gameController.LoadRoads();
+            var list = findObject.LoadRoads();
             foreach (var item in list)
             {
-                var btn = Instantiate(prefab, svContent);
-                btn.road = JsonUtility.FromJson<Road>(item);
-                btn.GetComponentInChildren<Text>().text = btn.road.startName + "<===>" + btn.road.arrivalName;
+                var btn = Instantiate(prefab, setPanel);
+                btn.path = JsonUtility.FromJson<RoadInformation>(item);
+                btn.GetComponentInChildren<Text>().text = btn.path.startPointName + "<===>" + btn.path.endPointName;
             }
         }
         /// <summary>
@@ -83,12 +83,12 @@ namespace CARS
         /// </summary>
         private void SaveRoads()
         {
-            string[] jsons = new string[svContent.childCount];
-            for (int i = 0; i < svContent.childCount; i++)
+            string[] jsons = new string[setPanel.childCount];
+            for (int i = 0; i < setPanel.childCount; i++)
             {
-                jsons[i] = JsonUtility.ToJson(svContent.GetChild(i).GetComponent<SelectButton>().road);
+                jsons[i] = JsonUtility.ToJson(setPanel.GetChild(i).GetComponent<SelectButton>().path);
             }
-            gameController.SaveRoads(jsons);
+            findObject.SaveRoads(jsons);
             info.text = "Successfully saved";
         }
         /// <summary>
@@ -98,31 +98,31 @@ namespace CARS
         {
             Destroy(selected.gameObject);
             info.text = "Delete successfully";
-            btnDelete.interactable = false;
+            deleteKeyPoint.interactable = false;
         }
         /// <summary>
         /// This section is used for button clicking
         /// </summary>
-        /// <param name="btnTF"></param>
-        public void SelectButtonClicked(Transform btnTF)
+        /// <param name="anySelected"></param>
+        public void confirmSelection(Transform anySelected)
         {
-            selected = btnTF;
-            info.text = btnTF.GetComponentInChildren<Text>().text;
-            btnDelete.interactable = true;
+            selected = anySelected;
+            info.text = anySelected.GetComponentInChildren<Text>().text;
+            deleteKeyPoint.interactable = true;
         }
         /// <summary>
         /// This is used to add paths
         /// </summary>
-        private void AddRoad()
+        private void NewPath()
         {
-            var btn = Instantiate(prefab, svContent);
+            var pathInfo = Instantiate(prefab, setPanel);
 
-            btn.road.startName = dpdStart.captionText.text;
-            btn.road.arrivalName = dpdArrival.captionText.text;
-            btn.road.startPosition = GetPositionByName(btn.road.startName);
-            btn.road.arrivalPosition = GetPositionByName(btn.road.arrivalName);
+            pathInfo.path.startPointName = loadJcombobox.captionText.text;
+            pathInfo.path.endPointName = endJcombobox.captionText.text;
+            pathInfo.path.startPointPosition = GetPositionFORMname(pathInfo.path.startPointName);
+            pathInfo.path.endPointPosition = GetPositionFORMname(pathInfo.path.endPointName);
 
-            btn.GetComponentInChildren<Text>().text = btn.road.startName + "<===>" + btn.road.arrivalName;
+            pathInfo.GetComponentInChildren<Text>().text = pathInfo.path.startPointName + "<===>" + pathInfo.path.endPointName;
 
             info.text = "Added successfully";
         }
@@ -130,15 +130,15 @@ namespace CARS
         /// The following section is used to obtain coordinates based on keypoint names
         /// Technically speaking, it means generating a straight line between two coordinates
         /// </summary>
-        /// <param name="pName">Key point name</param>
+        /// <param name="anyPointName">Key point name</param>
         /// <returns>key point coordinate</returns>
-        private Vector3 GetPositionByName(string pName)
+        private Vector3 GetPositionFORMname(string anyPointName)
         {
-            foreach (var kp in keyPoints)
+            foreach (var anyPoint in keyPoints)
             {
-                if (kp.name == pName)
+                if (anyPoint.KeyPointName == anyPointName)
                 {
-                    return kp.position;
+                    return anyPoint.KeyPointPosition;
                 }
             }
             return Vector3.zero;
@@ -148,16 +148,16 @@ namespace CARS
         /// </summary>
         private void BindDropdown()
         {
-            var list = gameController.LoadKeyPoins();
+            var list = findObject.LoadKeyPoins();
 
             foreach (var item in list)
             {
-                KeyPoint point = JsonUtility.FromJson<KeyPoint>(item);
+                EARpointData point = JsonUtility.FromJson<EARpointData>(item);
                 keyPoints.Add(point);
-                dpdStart.options.Add(new Dropdown.OptionData(point.name));
-                dpdArrival.options.Add(new Dropdown.OptionData(point.name));
-                dpdStart.captionText.text = dpdStart.options[0].text;
-                dpdArrival.captionText.text = dpdArrival.options[0].text;
+                loadJcombobox.options.Add(new Dropdown.OptionData(point.KeyPointName));
+                endJcombobox.options.Add(new Dropdown.OptionData(point.KeyPointName));
+                loadJcombobox.captionText.text = loadJcombobox.options[0].text;
+                endJcombobox.captionText.text = endJcombobox.options[0].text;
             }
         }
     }

@@ -40,7 +40,7 @@ namespace CARS.Pre
 
         private Button btnDelete;
 
-        private GameController gameController;
+        private EARcreatePath gameController;
 
         void Start()
         {
@@ -64,7 +64,7 @@ namespace CARS.Pre
             btnDelete.interactable = false;
 
             panel.transform.Find("ButtonSave").GetComponent<Button>().onClick.AddListener(SaveKeyPoints);
-            gameController = FindObjectOfType<GameController>();
+            gameController = FindObjectOfType<EARcreatePath>();
 
             LoadKeyPoints();
 
@@ -76,8 +76,8 @@ namespace CARS.Pre
             foreach (var item in list)
             {
                 SelectButton btn = Instantiate(prefab, svContent);
-                btn.keyPoint = JsonUtility.FromJson<KeyPoint>(item);
-                btn.GetComponentInChildren<Text>().text = btn.keyPoint.name;
+                btn.keyPoint = JsonUtility.FromJson<EARpointData>(item);
+                btn.GetComponentInChildren<Text>().text = btn.keyPoint.KeyPointName;
             }
         }
 
@@ -124,9 +124,9 @@ namespace CARS.Pre
             {
                 SelectButton btn = Instantiate(prefab, svContent);
 
-                btn.keyPoint.name = inputField.text;
-                btn.keyPoint.position = selected.localPosition;
-                btn.keyPoint.pointType = dropdown.value;
+                btn.keyPoint.KeyPointName = inputField.text;
+                btn.keyPoint.KeyPointPosition = selected.localPosition;
+                btn.keyPoint.KeyPointType = dropdown.value;
 
                 btn.GetComponentInChildren<Text>().text = inputField.text;
 

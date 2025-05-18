@@ -11,15 +11,15 @@ namespace CARS
         /// <summary>
         /// Declaration key points
         /// </summary>
-        public KeyPoint keyPoint;
+        public EARpointData keyPoint;
         /// <summary>
         /// Declaration Path
         /// </summary>
-        public Road road;
+        public RoadInformation path;
         /// <summary>
         /// Declaration of destination
         /// </summary>
-        public Transform arrival;
+        public Transform endPoint;
 
         void Start()
         {

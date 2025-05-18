@@ -1301,7 +1301,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 801197295}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90b0edb6308a3fe46a19f55821dc5725, type: 3}
+  m_Script: {fileID: 11500000, guid: e19db3fe811d38c46a4107c1e65bf798, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &801197298
@@ -1313,12 +1313,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 801197295}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75722fff63965d940b96eb4670e2341c, type: 3}
+  m_Script: {fileID: 11500000, guid: 2a6e76d0cb9f5584082e70c628f6a150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputField: {fileID: 0}
-  btnBuildMap: {fileID: 0}
-  btnDelete: {fileID: 0}
+  inputbox: {fileID: 0}
+  createMap: {fileID: 0}
+  deleteMap: {fileID: 0}
 --- !u!1 &943749121
 GameObject:
   m_ObjectHideFlags: 0
@@ -1890,7 +1890,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 801197297}
-        m_MethodName: LoadScene
+        m_MethodName: switchMethod
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

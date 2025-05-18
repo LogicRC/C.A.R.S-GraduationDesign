@@ -10,9 +10,9 @@ namespace CARS
     /// <summary>
     /// This is a global control method, although it includes a game, it is not a game.
     /// </summary>
-    public class GameController : MonoBehaviour
+    public class EARcreatePath : MonoBehaviour
     {
-        private static GameController instance = null;
+        private static EARcreatePath instance = null;
         /// <summary>
         /// Declare variables to store the input map name.
         /// </summary>

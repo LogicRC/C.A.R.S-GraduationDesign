@@ -5,12 +5,12 @@ using easyar;
 namespace CARS
 {
     //This script is used to implement scene control of key points
-    public class KeyPointsController : MonoBehaviour
+    public class EARcreatePoint : MonoBehaviour
     {
         /// <summary>
         /// Declaration Key Canvas
         /// </summary>
-        private GameObject panel;
+        private GameObject ARpanel;
         /// <summary>
         /// Declaration Information Text Box
         /// </summary>
@@ -53,10 +53,10 @@ namespace CARS
         /// <summary>
         /// Declare calling game control components
         /// </summary>
-        private GameController gameController;
-        private ARSession session;
-        private SparseSpatialMapWorkerFrameFilter mapWorker;
-        private SparseSpatialMapController map;
+        private EARcreatePath gameController;
+        private ARSession basicSession;
+        private SparseSpatialMapWorkerFrameFilter EARmapWorker;
+        private SparseSpatialMapController EARmap;
         /// <summary>
         /// Used to check the localization status of sparse maps
         /// </summary>
@@ -65,30 +65,30 @@ namespace CARS
         void Start()
         {
             // The following code is used to initialize and implement interface control
-            panel = GameObject.Find("/Canvas/Panel");
-            panel.transform.Find("ButtonClose").GetComponent<Button>().onClick.AddListener(() =>
+            ARpanel = GameObject.Find("/Canvas/Panel");
+            ARpanel.transform.Find("ButtonClose").GetComponent<Button>().onClick.AddListener(() =>
             {
                 HiddenPanel();
             });
-            info = panel.transform.Find("Text").GetComponent<Text>();
+            info = ARpanel.transform.Find("Text").GetComponent<Text>();
 
-            svContent = panel.transform.Find("Scroll View/Viewport/Content");
-            inputField = panel.transform.Find("InputField").GetComponent<InputField>();
-            dropdown = panel.transform.Find("Dropdown").GetComponent<Dropdown>();
-            btnAdd = panel.transform.Find("ButtonAdd").GetComponent<Button>();
+            svContent = ARpanel.transform.Find("Scroll View/Viewport/Content");
+            inputField = ARpanel.transform.Find("InputField").GetComponent<InputField>();
+            dropdown = ARpanel.transform.Find("Dropdown").GetComponent<Dropdown>();
+            btnAdd = ARpanel.transform.Find("ButtonAdd").GetComponent<Button>();
             btnAdd.onClick.AddListener(AddKeyPoint);
             btnAdd.interactable = false;
 
-            btnDelete = panel.transform.Find("ButtonDelete").GetComponent<Button>();
+            btnDelete = ARpanel.transform.Find("ButtonDelete").GetComponent<Button>();
             btnDelete.onClick.AddListener(DeleteKeyPoint);
             btnDelete.interactable = false;
 
-            panel.transform.Find("ButtonSave").GetComponent<Button>().onClick.AddListener(SaveKeyPoints);
-            gameController = FindObjectOfType<GameController>();
+            ARpanel.transform.Find("ButtonSave").GetComponent<Button>().onClick.AddListener(SaveKeyPoints);
+            gameController = FindObjectOfType<EARcreatePath>();
 
-            session = FindObjectOfType<ARSession>();
-            mapWorker = FindObjectOfType<SparseSpatialMapWorkerFrameFilter>();
-            map = FindObjectOfType<SparseSpatialMapController>();
+            basicSession = FindObjectOfType<ARSession>();
+            EARmapWorker = FindObjectOfType<SparseSpatialMapWorkerFrameFilter>();
+            EARmap = FindObjectOfType<SparseSpatialMapController>();
 
             LoadKeyPoints();
             HiddenPanel();
@@ -102,10 +102,10 @@ namespace CARS
         {
             // Call the method in EasyAR plugin to set the map
             // Retrieve specified map data based on MapID (actually EasyAR's map API) and map name
-            map.MapManagerSource.ID = PlayerPrefs.GetString("MapID");
-            map.MapManagerSource.Name = PlayerPrefs.GetString("MapName");
+            EARmap.MapManagerSource.ID = PlayerPrefs.GetString("MapID");
+            EARmap.MapManagerSource.Name = PlayerPrefs.GetString("MapName");
             // Set feedback for map acquisition
-            map.MapLoad += (map, status, error) =>
+            EARmap.MapLoad += (map, status, error) =>
             {
                 if (status)
                 {
@@ -118,17 +118,17 @@ namespace CARS
                 }
             };
             // Set successful positioning event prompt
-            map.MapLocalized += () =>
+            EARmap.MapLocalized += () =>
             {
                 gameController.SendMessage("ShowMessage", "Successfully entered sparse space localization");
             };
             // Set stop location event prompt
-            map.MapStopLocalize += () =>
+            EARmap.MapStopLocalize += () =>
             {
                 gameController.SendMessage("ShowMessage", "Stop sparse space localization");
             };
-            gameController.SendMessage("ShowMessage", "Start loading the map");
-            mapWorker.Localizer.startLocalization();    // Call the method in EasyAR plugin to start localizing the map
+            gameController.SendMessage("ShowMessage", "Start loading the EARmap");
+            EARmapWorker.Localizer.startLocalization();    // Call the method in EasyAR plugin to start localizing the map
         }
         #region This code is used to implement keypoint control
         /// <summary>
@@ -140,8 +140,8 @@ namespace CARS
             foreach (var item in list)
             {
                 SelectButton btn = Instantiate(prefab, svContent);
-                btn.keyPoint = JsonUtility.FromJson<KeyPoint>(item);
-                btn.GetComponentInChildren<Text>().text = btn.keyPoint.name;
+                btn.keyPoint = JsonUtility.FromJson<EARpointData>(item);
+                btn.GetComponentInChildren<Text>().text = btn.keyPoint.KeyPointName;
             }
         }
         /// <summary>
@@ -155,7 +155,7 @@ namespace CARS
                 jsons[i] = JsonUtility.ToJson(svContent.GetChild(i).GetComponent<SelectButton>().keyPoint);
             }
             gameController.SaveKeyPoints(jsons);
-            info.text = "Save completed";
+            info.text = "EARmapSave completed";
         }
         /// <summary>
         /// Delete key points
@@ -187,9 +187,9 @@ namespace CARS
             {
                 SelectButton btn = Instantiate(prefab, svContent);
 
-                btn.keyPoint.name = inputField.text;
-                btn.keyPoint.position = selected.localPosition;
-                btn.keyPoint.pointType = dropdown.value;
+                btn.keyPoint.KeyPointName = inputField.text;
+                btn.keyPoint.KeyPointPosition = selected.localPosition;
+                btn.keyPoint.KeyPointType = dropdown.value;
 
                 btn.GetComponentInChildren<Text>().text = inputField.text;
 
@@ -209,7 +209,7 @@ namespace CARS
         /// </summary>
         private void HiddenPanel()
         {
-            panel.SetActive(false);
+            ARpanel.SetActive(false);
             info.text = "";
         }
         /// <summary>
@@ -217,7 +217,7 @@ namespace CARS
         /// </summary>
         private void ShowPanel()
         {
-            panel.SetActive(true);
+            ARpanel.SetActive(true);
             info.text = "Position:" + selected.localPosition;
         }
         #endregion
@@ -245,7 +245,7 @@ namespace CARS
         {
             var tf = new GameObject().transform;
             tf.position = selected.position;
-            tf.parent = map.transform;
+            tf.parent = EARmap.transform;
             selected = tf;
         }
         #endregion

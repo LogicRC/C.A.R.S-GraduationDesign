@@ -7,32 +7,35 @@ namespace CARS
     /// <summary>
     /// the following code is the scene controller for the main menu
     /// </summary>
-    public class MenuController : MonoBehaviour
+    public class MenuCommander : MonoBehaviour
     {
         /// <summary>
         /// Waiting for user to input map name
         /// </summary>
-        public InputField inputField; // 现在用 Inspector 拖拽引用
+        public InputField inputbox; // 现在用 Inspector 拖拽引用
         /// <summary>
         /// Button for creating map
         /// </summary>
-        public GameObject btnBuildMap;
+        public GameObject createMap;
         /// <summary>
         /// Button for delete map, but only local
         /// </summary>
-        public GameObject btnDelete;
+        public GameObject deleteMap;
         /// <summary>
         /// GameController used to mount scripts
         /// </summary>
-        private GameController gameController;
+        private EARcreatePath findObject;
 
         void Start()
         {
-            gameController = FindObjectOfType<GameController>();
+            /// <summary>
+            /// Check if necessary components exist
+            /// </summary>
+            findObject = FindObjectOfType<EARcreatePath>();
 
-            if (inputField == null || btnBuildMap == null || btnDelete == null)
+            if (inputbox == null || createMap == null || deleteMap == null)
             {
-                Debug.LogError("❌ UI 元素未正确绑定，请在 Inspector 中拖拽 InputField、ButtonBuildMap、ButtonDelete");
+                Debug.LogError("Error!!! UI element not properly bound, please drag and drop InputField, Buttons Build Map, Buttons Delete in Inspector");
                 return;
             }
 
@@ -44,9 +47,9 @@ namespace CARS
         /// </summary>
         public void BuildMap()
         {
-            if (!string.IsNullOrEmpty(inputField.text))
+            if (!string.IsNullOrEmpty(inputbox.text))
             {
-                gameController.inputName = inputField.text;
+                findObject.inputName = inputbox.text;
                 SceneManager.LoadScene("BuildMap");
             }
         }
@@ -66,12 +69,12 @@ namespace CARS
         /// </summary>
         private void SetBuildUI()
         {
-            inputField.text = PlayerPrefs.GetString("MapName");
-            bool status = string.IsNullOrEmpty(inputField.text);
+            inputbox.text = PlayerPrefs.GetString("MapName");
+            bool status = string.IsNullOrEmpty(inputbox.text);
 
-            inputField.interactable = status;
-            btnBuildMap.SetActive(status);
-            btnDelete.SetActive(!status);
+            inputbox.interactable = status;
+            createMap.SetActive(status);
+            deleteMap.SetActive(!status);
         }
 
         /// <summary>

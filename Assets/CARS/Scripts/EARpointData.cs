@@ -10,24 +10,24 @@ namespace CARS
     /// All methods provided in EasyAR
     /// </summary>
     [Serializable]
-    public class KeyPoint
+    public class EARpointData
     {
         /// <summary>
         /// Declare location information
         /// </summary>
-        public Vector3 position;
+        public Vector3 KeyPointPosition;
         /// <summary>
         /// Declare angle information
         /// </summary>
-        public Quaternion rotation;
+        public Quaternion KeyPointRotation;
         /// <summary>
         /// Declaration of Key Point Names
         /// </summary>
-        public string name;
+        public string KeyPointName;
         /// <summary>
         /// Setting type: 0=destination; 1=Passing point
         /// </summary>
-        public int pointType;
+        public int KeyPointType;
     }
 }
 

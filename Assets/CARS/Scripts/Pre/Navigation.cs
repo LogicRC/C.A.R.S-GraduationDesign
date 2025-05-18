@@ -8,7 +8,7 @@ namespace CARS
 {
     public class Navigation : MonoBehaviour
     {
-        private GameController gameController;
+        private EARcreatePath gameController;
         /// <summary>
         /// 导航画布
         /// </summary>
@@ -59,7 +59,7 @@ namespace CARS
         public Transform player;
         void Start()
         {
-            gameController = FindObjectOfType<GameController>();
+            gameController = FindObjectOfType<EARcreatePath>();
             panel = GameObject.Find("/Canvas/Panel");
             btnNav = GameObject.Find("/Canvas/ButtonNav").GetComponent<Button>();
             btnNav.onClick.AddListener(ShowNavUI);
@@ -85,7 +85,7 @@ namespace CARS
         public void SelectButtonClicked(Transform btnTF)
         {
             CancelInvoke("DisplayPath");
-            arrival = btnTF.GetComponent<SelectButton>().arrival;
+            arrival = btnTF.GetComponent<SelectButton>().endPoint;
 
             Transform root = navRoot.Find("Arrivals");
             for (int i = 0; i < root.childCount; i++)
@@ -160,13 +160,13 @@ namespace CARS
 
             foreach (var item in list)
             {
-                var road = JsonUtility.FromJson<Road>(item);
+                var road = JsonUtility.FromJson<RoadInformation>(item);
                 var tfRoad = Instantiate(prefabRoad, navRoot.Find("Roads"));
 
-                tfRoad.localPosition = (road.startPosition + road.arrivalPosition) / 2;
-                temp.localPosition = road.arrivalPosition;
+                tfRoad.localPosition = (road.startPointPosition + road.endPointPosition) / 2;
+                temp.localPosition = road.endPointPosition;
                 tfRoad.LookAt(temp);
-                tfRoad.localScale = new Vector3(0.02f, 1f, (road.arrivalPosition - road.startPosition).magnitude * 0.1f + 0.2f);
+                tfRoad.localScale = new Vector3(0.02f, 1f, (road.endPointPosition - road.startPointPosition).magnitude * 0.1f + 0.2f);
             }
             Destroy(temp.gameObject);
         }
@@ -178,16 +178,16 @@ namespace CARS
             var list = gameController.LoadKeyPoins();
             foreach (var item in list)
             {
-                KeyPoint point = JsonUtility.FromJson<KeyPoint>(item);
-                if (point.pointType == 0)
+                EARpointData point = JsonUtility.FromJson<EARpointData>(item);
+                if (point.KeyPointType == 0)
                 {
                     var btn = Instantiate(prefabButton, svContent);
                     btn.keyPoint = point;
-                    btn.GetComponentInChildren<Text>().text = point.name;
+                    btn.GetComponentInChildren<Text>().text = point.KeyPointName;
 
                     var arrivalTemp = Instantiate(prefabArrival, navRoot.Find("Arrivals"));
-                    arrivalTemp.localPosition = point.position;
-                    btn.arrival = arrivalTemp;
+                    arrivalTemp.localPosition = point.KeyPointPosition;
+                    btn.endPoint = arrivalTemp;
                 }
             }
         }

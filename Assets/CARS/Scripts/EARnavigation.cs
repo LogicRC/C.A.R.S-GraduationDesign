@@ -8,79 +8,80 @@ namespace CARS
     /// <summary>
     /// This script is used to control AR navigation scenes
     /// </summary>
-    public class NavigationController : MonoBehaviour
+    public class EARnavigation : MonoBehaviour
     {
         /// <summary>
-        /// Declare game control, it's just called this, temporarily
+        /// Used to obtain control over a component
+        /// In the following code, it is used to obtain error prompt boxes
         /// </summary>
-        private GameController gameController;
+        private EARcreatePath findObject;
         /// <summary>
         /// Declare the navigation canvas in the scene
         /// </summary>
-        private GameObject panel;
+        private GameObject ARpanel;
         /// <summary>
         /// Declare navigation buttons in the scene
         /// </summary>
-        private Button btnNav;
+        private Button startNavigation;
         /// <summary>
         /// Declare navigation buttons in the scene
         /// </summary>
-        public SelectButton prefabButton;
+        public SelectButton findPrefab;
         /// <summary>
         /// Declare the navigation button container in the scene
         /// </summary>
-        private Transform svContent;
+        private Transform navigationPanel;
         /// <summary>
         /// Declare the navigation root node in the scene
         /// </summary>
-        public Transform navRoot;
+        public Transform navigationRoot;
         /// <summary>
         /// Declaration of destination prefabricated parts in the scenario
         /// </summary>
-        public Transform prefabArrival;
+        public Transform endPoint;
         /// <summary>
         /// Declare path prefabricated components in the scene
         /// </summary>
-        public Transform prefabRoad;
+        public Transform importPath;
         /// <summary>
         /// Declare the navigation lines in the scene
         /// </summary>
-        private LineRenderer lineRenderer;
+        private LineRenderer setLine;
         /// <summary>
         /// Declare the navigation agent in the scene
         /// </summary>
-        private NavMeshAgent agent;
+        private NavMeshAgent NavAgent;
         /// <summary>
         /// Declare the navigation path in the scene
         /// </summary>
-        private NavMeshPath path;
-        private NavMeshSurface surface;
+        private NavMeshPath NavPath;
+        private NavMeshSurface NavSurface;
         /// <summary>
         /// Declare the navigation target in the scene
         /// </summary>
-        private Transform arrival;
+        private Transform setEndPoint;
         /// <summary>
         /// Declare the user's location to achieve navigation effects that follow the user's movements
         /// </summary>
-        public Transform player;
+        public Transform SetUserPosition;
 
-        private ARSession session;
-        private SparseSpatialMapWorkerFrameFilter mapWorker;
-        private SparseSpatialMapController map;
+        private ARSession basicSession;
+        private SparseSpatialMapWorkerFrameFilter EARmapWorker;
+        private SparseSpatialMapController EARmap;
         void Start()
         {
-            gameController = FindObjectOfType<GameController>();
-            panel = GameObject.Find("/Canvas/Panel");
-            btnNav = GameObject.Find("/Canvas/ButtonNav").GetComponent<Button>();
-            btnNav.onClick.AddListener(ShowNavUI);
-            btnNav.interactable = false;
-            panel.transform.Find("ButtonClose").GetComponent<Button>().onClick.AddListener(CloseNavUI);
+            findObject = FindObjectOfType<EARcreatePath>();
+            ARpanel = GameObject.Find("/Canvas/Panel");
+            startNavigation = GameObject.Find("/Canvas/ButtonNav").GetComponent<Button>();
+            startNavigation.onClick.AddListener(ShowNavUI);
+            startNavigation.interactable = false;
+            ARpanel.transform.Find("ButtonClose").GetComponent<Button>().onClick.AddListener(CloseNavUI);
 
-            svContent = panel.transform.Find("Scroll View/Viewport/Content").transform;
+            navigationPanel = ARpanel.transform.Find("Scroll View/Viewport/Content").transform;
 
-            session = FindObjectOfType<ARSession>();
-            mapWorker = FindObjectOfType<SparseSpatialMapWorkerFrameFilter>();
-            map = FindObjectOfType<SparseSpatialMapController>();
+            basicSession = FindObjectOfType<ARSession>();
+            EARmapWorker = FindObjectOfType<SparseSpatialMapWorkerFrameFilter>();
+            EARmap = FindObjectOfType<SparseSpatialMapController>();
 
             SetLine();
             CloseNavUI();
@@ -93,38 +94,38 @@ namespace CARS
         private void LoadMap()
         {
             //Set map name and ID
-            map.MapManagerSource.ID = PlayerPrefs.GetString("MapID");
-            map.MapManagerSource.Name = PlayerPrefs.GetString("MapName");
+            EARmap.MapManagerSource.ID = PlayerPrefs.GetString("MapID");
+            EARmap.MapManagerSource.Name = PlayerPrefs.GetString("MapName");
             //Set feedback on map loading, success or failure
-            map.MapLoad += (map, status, error) =>
+            EARmap.MapLoad += (map, status, error) =>
             {
                 if (status)
                 {
-                    gameController.SendMessage("ShowMessage", "Map loaded successfully");
+                    findObject.SendMessage("ShowMessage", "Map loaded successfully");
                 }
                 else
                 {
-                    gameController.SendMessage("ShowMessage", "Map loading failed:" + error);
+                    findObject.SendMessage("ShowMessage", "Map loading failed:" + error);
                 }
             };
             // Set successful positioning event prompt
-            map.MapLocalized += () =>
+            EARmap.MapLocalized += () =>
             {
-                gameController.SendMessage("ShowMessage", "Successfully entered sparse space localization");
+                findObject.SendMessage("ShowMessage", "Successfully entered sparse space localization");
                 ClearNav();
                 LoadArrivals();
                 LoadRoads();
                 BakePath();
-                btnNav.interactable = true;
+                startNavigation.interactable = true;
                 ShowNavUI();
             };
             // Set stop location event prompt
-            map.MapStopLocalize += () =>
+            EARmap.MapStopLocalize += () =>
             {
-                gameController.SendMessage("ShowMessage", "Stop sparse space localization");
+                findObject.SendMessage("ShowMessage", "Stop sparse space localization");
             };
-            gameController.SendMessage("ShowMessage", "Start loading the map");
-            mapWorker.Localizer.startLocalization();    // Call the method in EasyAR plugin to start localizing the map
+            findObject.SendMessage("ShowMessage", "Start loading the EARmap");
+            EARmapWorker.Localizer.startLocalization();    // Call the method in EasyAR plugin to start localizing the map
         }
         /// <summary>
         /// Clean up navigation elements
@@ -134,17 +135,17 @@ namespace CARS
         private void ClearNav()
         {
             // delete Button
-            foreach (Transform tf in svContent)
+            foreach (Transform tf in navigationPanel)
             {
                 Destroy(tf.gameObject);
             }
             // Delete destination
-            foreach (Transform tf in navRoot.Find("Arrivals"))
+            foreach (Transform tf in navigationRoot.Find("Arrivals"))
             {
                 Destroy(tf.gameObject);
             }
             // delete path
-            foreach (Transform tf in navRoot.Find("Roads"))
+            foreach (Transform tf in navigationRoot.Find("Roads"))
             {
                 Destroy(tf.gameObject);
             }
@@ -156,14 +157,14 @@ namespace CARS
         public void SelectButtonClicked(Transform btnTF)
         {
             CancelInvoke("DisplayPath");
-            arrival = btnTF.GetComponent<SelectButton>().arrival;
+            setEndPoint = btnTF.GetComponent<SelectButton>().endPoint;
 
-            Transform root = navRoot.Find("Arrivals");
+            Transform root = navigationRoot.Find("Arrivals");
             for (int i = 0; i < root.childCount; i++)
             {
                 root.GetChild(i).gameObject.SetActive(false);
             }
-            arrival.gameObject.SetActive(true);
+            setEndPoint.gameObject.SetActive(true);
 
             InvokeRepeating("DisplayPath", 0, 0.5f);
             CloseNavUI();
@@ -175,24 +176,24 @@ namespace CARS
         /// </summary>
         private void DisplayPath()
         {
-            agent.transform.position = player.position;
-            agent.enabled = true;
-            agent.CalculatePath(arrival.position, path);
-            lineRenderer.positionCount = path.corners.Length;
-            lineRenderer.SetPositions(path.corners);
-            agent.enabled = false;
+            NavAgent.transform.position = SetUserPosition.position;
+            NavAgent.enabled = true;
+            NavAgent.CalculatePath(setEndPoint.position, NavPath);
+            setLine.positionCount = NavPath.corners.Length;
+            setLine.SetPositions(NavPath.corners);
+            NavAgent.enabled = false;
         }
         /// <summary>
         /// Call the method baking path in NavMeshAgent
         /// </summary>
         private void BakePath()
         {
-            surface = FindObjectOfType<NavMeshSurface>();
-            agent = FindObjectOfType<NavMeshAgent>();
-            agent.transform.position = player.position;
-            agent.enabled = false;
-            surface.BuildNavMesh();
-            path = new NavMeshPath();
+            NavSurface = FindObjectOfType<NavMeshSurface>();
+            NavAgent = FindObjectOfType<NavMeshAgent>();
+            NavAgent.transform.position = SetUserPosition.position;
+            NavAgent.enabled = false;
+            NavSurface.BuildNavMesh();
+            NavPath = new NavMeshPath();
         }
 
         /// <summary>
@@ -201,11 +202,11 @@ namespace CARS
         /// </summary>
         private void SetLine()
         {
-            lineRenderer = navRoot.Find("Line").gameObject.AddComponent<LineRenderer>();
-            Debug.Log(lineRenderer);
-            lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
-            lineRenderer.positionCount = 0;
-            lineRenderer.widthMultiplier = 0.05f;
+            setLine = navigationRoot.Find("Line").gameObject.AddComponent<LineRenderer>();
+            Debug.Log(setLine);
+            setLine.material = new Material(Shader.Find("Sprites/Default"));
+            setLine.positionCount = 0;
+            setLine.widthMultiplier = 0.05f;
             Gradient gradient = new Gradient();
             gradient.SetKeys(
                 new GradientColorKey[] {
@@ -214,7 +215,7 @@ namespace CARS
                 new GradientAlphaKey[] {
                 new GradientAlphaKey(1f, 0.0f),
                 new GradientAlphaKey(1f, 1.0f) });
-            lineRenderer.colorGradient = gradient;
+            setLine.colorGradient = gradient;
         }
         /// <summary>
         /// This method is used to load paths
@@ -223,20 +224,20 @@ namespace CARS
         /// </summary>
         private void LoadRoads()
         {
-            var list = gameController.LoadRoads();
+            var list = findObject.LoadRoads();
 
             var temp = new GameObject().transform;
-            temp.parent = navRoot.Find("Roads");
+            temp.parent = navigationRoot.Find("Roads");
 
             foreach (var item in list)
             {
-                var road = JsonUtility.FromJson<Road>(item);
-                var tfRoad = Instantiate(prefabRoad, navRoot.Find("Roads"));
+                var road = JsonUtility.FromJson<RoadInformation>(item);
+                var tfRoad = Instantiate(importPath, navigationRoot.Find("Roads"));
 
-                tfRoad.localPosition = (road.startPosition + road.arrivalPosition) / 2;
-                temp.localPosition = road.arrivalPosition;
+                tfRoad.localPosition = (road.startPointPosition + road.endPointPosition) / 2;
+                temp.localPosition = road.endPointPosition;
                 tfRoad.LookAt(temp);
-                tfRoad.localScale = new Vector3(0.02f, 1f, (road.arrivalPosition - road.startPosition).magnitude * 0.1f + 0.2f);
+                tfRoad.localScale = new Vector3(0.02f, 1f, (road.endPointPosition - road.startPointPosition).magnitude * 0.1f + 0.2f);
             }
             Destroy(temp.gameObject);
         }
@@ -246,19 +247,19 @@ namespace CARS
         /// </summary>
         private void LoadArrivals()
         {
-            var list = gameController.LoadKeyPoins();
+            var list = findObject.LoadKeyPoins();
             foreach (var item in list)
             {
-                KeyPoint point = JsonUtility.FromJson<KeyPoint>(item);
-                if (point.pointType == 0)
+                EARpointData point = JsonUtility.FromJson<EARpointData>(item);
+                if (point.KeyPointType == 0)
                 {
-                    var btn = Instantiate(prefabButton, svContent);
+                    var btn = Instantiate(findPrefab, navigationPanel);
                     btn.keyPoint = point;
-                    btn.GetComponentInChildren<Text>().text = point.name;
+                    btn.GetComponentInChildren<Text>().text = point.KeyPointName;
 
-                    var arrivalTemp = Instantiate(prefabArrival, navRoot.Find("Arrivals"));
-                    arrivalTemp.localPosition = point.position;
-                    btn.arrival = arrivalTemp;
+                    var arrivalTemp = Instantiate(endPoint, navigationRoot.Find("Arrivals"));
+                    arrivalTemp.localPosition = point.KeyPointPosition;
+                    btn.endPoint = arrivalTemp;
                     arrivalTemp.gameObject.SetActive(false);
                 }
             }
@@ -268,14 +269,14 @@ namespace CARS
         /// </summary>
         private void ShowNavUI()
         {
-            panel.SetActive(true);
+            ARpanel.SetActive(true);
         }
         /// <summary>
         /// It needs to be closed as it has been opened
         /// </summary>
         private void CloseNavUI()
         {
-            panel.SetActive(false);
+            ARpanel.SetActive(false);
         }
     }
 }
